@@ -1,0 +1,1042 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Digital Trust Factory — Operating Model</title>
+    <meta name="description" content="Operating model: Bronze/Silver/Gold tiers, Golden Paths, and risk-proportional governance." />
+    <meta name="color-scheme" content="light" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif}
+    </style>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/site.js" defer></script>
+  </head>
+  <body class="bg-slate-50 text-slate-800">
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:justify-between md:h-16 md:items-center py-3 md:py-0 gap-2">
+          <div class="flex items-center gap-3">
+            <span class="text-xl font-bold text-blue-600">TÜV SÜD</span>
+            <span class="text-slate-400">|</span>
+            <span class="text-slate-600 font-medium">Digital Trust Factory</span>
+          </div>
+          <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
+            <a data-nav href="index.html" class="text-slate-600 hover:text-blue-600">Summary</a>
+            <a data-nav href="tuv-context.html" class="text-slate-600 hover:text-blue-600">TÜV Context</a>
+            <a data-nav href="strategy.html" class="text-slate-600 hover:text-blue-600">Strategy</a>
+            <a data-nav href="operating-model.html" class="text-slate-600 hover:text-blue-600">Operating Model</a>
+            <a data-nav href="roadmap.html" class="text-slate-600 hover:text-blue-600">Roadmap</a>
+            <a data-nav href="fit.html" class="text-slate-600 hover:text-blue-600">Personal Fit</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 py-10">
+      <header class="bg-gradient-to-r from-blue-700 to-cyan-600 text-white rounded-2xl px-6 py-10 shadow-sm">
+        <h1 class="text-3xl md:text-4xl font-bold">Operating Model</h1>
+        <p class="mt-2 text-white/90 max-w-2xl">
+          Hub-and-Spoke structure with tiered delivery: how the factory runs day-to-day.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <span class="bg-white/20 backdrop-blur px-3 py-1.5 rounded-full border border-white/30 text-sm font-semibold">Hub & Spoke</span>
+          <span class="bg-white/20 backdrop-blur px-3 py-1.5 rounded-full border border-white/30 text-sm font-semibold">Four Tiers</span>
+          <span class="bg-white/20 backdrop-blur px-3 py-1.5 rounded-full border border-white/30 text-sm font-semibold">Factory Model</span>
+        </div>
+      </header>
+
+      <section>
+        <h2 class="text-2xl font-bold mt-12">Hub-and-Spoke organizational model</h2>
+        <p class="text-sm text-slate-600 mt-2">
+          The Hub (T-Tech CoE) provides secure infrastructure and certified building blocks. The Spokes (divisions/regions) deliver context-specific solutions using those guardrails.
+        </p>
+
+        <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 border-l-4 border-blue-600">
+            <h3 class="text-lg font-bold text-slate-800">The Hub (T-Tech CoE)</h3>
+            <ul class="text-sm text-slate-700 mt-3 list-disc list-inside space-y-1">
+              <li><strong>Governance guardrails:</strong> DLP policies, environment strategy, security standards</li>
+              <li><strong>Platform product:</strong> GaC/CaC catalog (certified connectors, templates, evidence automation)</li>
+              <li><strong>Gold delivery:</strong> SWAT teams for high-impact, cross-divisional projects</li>
+              <li><strong>Academy:</strong> training curriculum and community building</li>
+              <li><strong>Licensing & usage control:</strong> centralized Power Platform licenses and AI credits</li>
+              <li><strong>Project approval & prioritization:</strong> review and prioritize projects based on value, risk, and resource capacity</li>
+              <li><strong>Value measurement:</strong> measure value created by the platform (ROI, efficiency gains, cost savings)</li>
+              <li><strong>P&L responsibility:</strong> financial accountability for platform run costs and EBIT targets</li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 border-l-4 border-slate-400">
+            <h3 class="text-lg font-bold text-slate-800">The Spokes (Divisions/Regions)</h3>
+            <ul class="text-sm text-slate-700 mt-3 list-disc list-inside space-y-1">
+              <li><strong>Bronze/Silver delivery:</strong> citizen developers and business technologists using Hub guardrails</li>
+              <li><strong>Requirement gathering:</strong> identify high-value use cases and funnel complex ones to the Hub</li>
+              <li><strong>Local adoption:</strong> first-level support and "how-to" guidance for makers</li>
+              <li><strong>Context-specific solutions:</strong> adapt global templates to local regulations and business needs</li>
+              <li><strong>Alliances & champions:</strong> division/spoke level alliances and champions to drive adoption and best practices</li>
+              <li><strong>Special agreements:</strong> division/spoke level special agreements above standard tiers when needed (e.g., custom SLAs, dedicated capacity)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-4 bg-slate-50 border border-slate-200 rounded-lg p-4">
+          <p class="text-sm text-slate-700">
+            <strong>Why this works:</strong> Instead of breaking down silos by force, we empower them. The Hub provides "guarded highways" (secure infrastructure); the Spokes drive the cars (deliver solutions). Compliance is baked into platform templates, so local apps are "compliant by design."
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mt-12">Tiered delivery model</h2>
+        <div class="mt-4 bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+          <svg id="pyramidChart" viewBox="0 0 400 360" class="w-full h-auto max-w-2xl mx-auto" aria-label="Pyramid chart showing Platform & Governance, Bronze, Silver, Gold tiers"></svg>
+          <p class="text-xs text-slate-500 mt-4 text-center">Platform & Governance = the foundation. Bronze = enablement & guardrails. Silver = factory execution. Gold = SWAT teams.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mt-12">Tier explorer (click to expand)</h2>
+        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <article class="interactive-card bg-blue-50 border border-blue-200 rounded-xl p-5 shadow-sm" data-tier-card="platform">
+            <div class="flex justify-between items-center">
+              <div class="font-bold text-blue-800">Platform & Governance</div>
+              <span class="text-xs font-bold px-2 py-1 rounded bg-blue-100 text-blue-800">Foundation</span>
+            </div>
+            <div class="text-sm text-slate-500 mt-2">"The Hub"</div>
+            <div class="text-sm text-slate-600 mt-3">Platform infrastructure, governance guardrails, and certified building blocks.</div>
+            <div class="mt-3 text-sm font-semibold text-blue-600">See mechanism ↓</div>
+          </article>
+          <article class="interactive-card bg-stone-50 border border-stone-200 rounded-xl p-5 shadow-sm" data-tier-card="bronze">
+            <div class="flex justify-between items-center">
+              <div class="font-bold text-stone-800">Bronze Tier</div>
+              <span class="text-xs font-bold px-2 py-1 rounded bg-stone-100 text-stone-800">Self-service</span>
+            </div>
+            <div class="text-sm text-slate-500 mt-2">"Enablement"</div>
+            <div class="text-sm text-slate-600 mt-3">Controlled self-service for small operational tweaks with strict guardrails.</div>
+            <div class="mt-3 text-sm font-semibold text-blue-600">See mechanism ↓</div>
+          </article>
+          <article class="interactive-card active-card bg-slate-50 border border-slate-200 rounded-xl p-5 shadow-sm" data-tier-card="silver">
+            <div class="flex justify-between items-center">
+              <div class="font-bold text-slate-800">Silver Tier</div>
+              <span class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-700">Factory</span>
+            </div>
+            <div class="text-sm text-slate-500 mt-2">"Global Factory"</div>
+            <div class="text-sm text-slate-600 mt-3">Core execution engine: onshore leadership + offshore delivery.</div>
+            <div class="mt-3 text-sm font-semibold text-blue-600">See mechanism ↓</div>
+          </article>
+          <article class="interactive-card bg-amber-50 border border-amber-200 rounded-xl p-5 shadow-sm" data-tier-card="gold">
+            <div class="flex justify-between items-center">
+              <div class="font-bold text-amber-800">Gold Tier</div>
+              <span class="text-xs font-bold px-2 py-1 rounded bg-amber-100 text-amber-800">SWAT</span>
+            </div>
+            <div class="text-sm text-slate-500 mt-2">"SWAT Team"</div>
+            <div class="text-sm text-slate-600 mt-3">Strategic initiatives with premium governance and measurable ROI.</div>
+            <div class="mt-3 text-sm font-semibold text-blue-600">See mechanism ↓</div>
+          </article>
+        </div>
+
+        <article id="tier-detail" class="mt-4 bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+          <div id="tier-platform" class="hidden">
+            <h3 class="text-xl font-bold text-blue-700">Platform & Governance — the "Hub" foundation</h3>
+            
+            <div class="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <!-- Mission & Scope Card -->
+              <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-blue-800 mb-3">Mission & scope</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Provide the 'Digital Foundation' and 'Guarded Highways' for the organization. Establish and operate the platform infrastructure that enables all other tiers">Mission</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="BPA Lead / T-Tech (Central Digital Service). The Hub is physically anchored in Munich but acts globally">Owner</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Platform product development, governance automation, security standards, and operational excellence for Bronze/Silver/Gold tiers">Scope</span>
+                </div>
+              </div>
+              <!-- Governance Guardrails Card -->
+              <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-blue-800 mb-3">Governance guardrails</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Defining and enforcing Data Loss Prevention policies to prevent data exfiltration (e.g., blocking connectors between SAP and personal Dropboxes)">DLP policies</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Managing Dev/Test/Prod separation, Master Data Management, and Identity Management (Azure AD integration). Strict isolation of Dataverse environments (Personal Productivity, Business Prod per Division)">Environment strategy</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Platform security hardening to TISAX standards. TISAX-compliant controls (Audit Logging, Customer Managed Keys). CISO integration flags risky patterns automatically">Security standards</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="CoE Starter Kit enforces GDPR (no unauthorized data export), automated compliance scanning, and audit trail (every action logged for compliance review)">Compliance automation</span>
+                </div>
+              </div>
+              <!-- Platform Product: GaC/CaC Catalog Card -->
+              <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-blue-800 mb-3">Platform product: GaC/CaC catalog</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Golden paths for SAP/Dataverse/SharePoint patterns. Pre-certified, TISAX-compliant components (e.g., SAP Connector, Dataverse Sync, Approval Workflow, Dynamics 365 Integration)">Certified connectors/nodes</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="DLP packs, environment routing, naming/metadata standards. Starter Kit enforces governance automatically">Guardrails</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Standard telemetry + audit trail templates. Evidence automation: evidence packs from logs/controls (human sign-off)">Logging & evidence</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Approvals, exception handling, IDP patterns. AI Builder Templates with ethics + safety checks">Reusable components</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Predictive compliance signals, process conformance checks, policy Q&amp;A assistant, AI drift monitoring, HOL/HIL/HIC analysis">AI‑aided monitoring</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="'Use Golden Path' → Automatic approval, fast deployment. 'Build custom connector' → 6-week manual review. Developers choose Golden Paths because they're faster, not because they're mandated">Value proposition</span>
+                </div>
+              </div>
+              
+              <!-- Licensing & Usage Control Card -->
+              <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-blue-800 mb-3">Licensing & usage control</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Managing Power Platform licenses and AI credits (transitioning from AI Builder credits to Copilot credits). Centralized procurement of Power Platform licenses">Centralized procurement</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Implementing 'Tenant Isolation' and 'Environment Routing.' Makers get Developer environment with zero AI credits. To get credits, they must promote to Staging environment, triggering business value review. Cost is gated behind value">Cost gating</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Premium connectors + AI tokens gated behind value. BPA budgets and gates premium licenses / AI tokens behind value and promotion">Consumption budgeting</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Real-time monitoring dashboard showing every app, environment, and AI credit spent. Divisions see their own consumptionT-Tech sees aggregate health">Visibility</span>
+                </div>
+              </div>
+              <!-- Project Approval & Prioritization Card -->
+              <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-blue-800 mb-3">Project approval & prioritization</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Review and prioritize projects based on value, risk, and resource capacity. Governance flow: Uses only Golden Paths? → AUTO-APPROVED (24 hours). Custom logic? → Manual review (1-4 weeks based on risk level)">Review process</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Low risk → 1-week review → SILVER tier. Mid risk → 2-week review → CoE assessment. High risk → 4-week review + CISO → GOLD tier">Risk-based routing</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Front Office (Business Partners, Architects) hunts for value ('Big Fish') opportunities in divisions. Translates vague business problems into technical specifications">Big Fish identification</span>
+                </div>
+              </div>
+              
+              <!-- Value Measurement Card -->
+              <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-blue-800 mb-3">Value measurement</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Measure value created by the platform (ROI, efficiency gains, cost savings). Dashboard tracks: App usage, performance, compliance status. KPIs: Time-to-value, cost per project, compliance rate">KPIs</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Self-service analytics. Divisions see their own consumption + T-Tech sees aggregate health. Transparency enables data-driven decisions">Transparency</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Track efficiency gains, cost savings, and strategic value delivered across Bronze/Silver/Gold tiers. Measure platform contribution to €1M EBIT target">ROI tracking</span>
+                </div>
+              </div>
+              
+              <!-- Academy & Enablement Card -->
+              <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-blue-800 mb-3">Academy & enablement</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Owning the training curriculum and community building to upskill the Spokes. 'Bronze Tier' training program marketed as 'Digital Upskilling'">Training curriculum</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Community-led support (Forums, Yammer/Viva Engage) for Bronze tier. Office Hours with CoE experts for Silver tier">Community building</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Training &amp; Certification Program. Enablement and upskilling to turn TÜV SÜD into a digital-first workforce">Certification program</span>
+                </div>
+              </div>
+              <!-- Gold Delivery & SWAT Teams Card -->
+              <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-blue-800 mb-3">Gold delivery & SWAT teams</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Executing complex, high-risk, or cross-divisional projects that require professional coding standards. Deploy elite SWAT teams to high-value strategic projects">SWAT team execution</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Front Office leads architecture; Back Office executes code. 30% Munich (architecture, stakeholder management, compliance), 70% offshore (execution, testing, deployment)">Hybrid delivery</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Enterprise-grade code review, security assessment, TISAX/GDPR pre-certification, ongoing support and monitoring (24/7 SLA-backed support)">Premium governance</span>
+                </div>
+              </div>
+              
+              <!-- Spoke Management & Enablement Card -->
+              <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-blue-800 mb-3">Spoke management & enablement</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Provide guardrails, certified building blocks, and templates that enable citizen developers and business technologists in divisions/regions to build compliant solutions. Hub provides 'guarded highways' (secure infrastructure); Spokes drive the cars (deliver solutions)">Enable Bronze/Silver delivery</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Front Office (Business Partners, Architects) works with Spokes to identify high-value use cases ('Big Fish') and funnel complex ones to the Hub for Gold tier execution. Translate vague business problems into technical specifications">Support requirement gathering</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Provide first-level support infrastructure, 'how-to' guidance, and enablement materials for makers. Office Hours with CoE experts for Silver tier. Community-led support (Forums, Yammer/Viva Engage) for Bronze tier">Enable local adoption</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Provide global templates that can be adapted to local regulations and business needs. Enable Spokes to adapt global templates to local requirements (e.g., specific US state regulations, varying Asian standards, China data residency via 21Vianet tenant) while maintaining governance consistency">Support context-specific solutions</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Establish and support division/spoke level alliances and champions to drive adoption and best practices. Create network of local advocates who promote platform usage, share success stories, and provide peer support. Hub provides structure; Spokes provide grassroots momentum">Facilitate alliances & champions</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Negotiate and manage division/spoke level special agreements above standard tiers when needed (e.g., custom SLAs, dedicated capacity blocks, premium support). Balance standardization with flexibility for high-value accounts 82">Manage special agreements</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Monitor Spoke activities for compliance, quality, and alignment with platform standards. Provide feedback, coaching, and escalation paths. Ensure Spokes operate within guardrails while maintaining autonomy">Spoke governance oversight</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Facilitate knowledge sharing and reuse across divisions/regions. Identify common patterns and promote reusable solutions. Prevent duplication and encourage collaboration while respecting silos">Cross-spoke coordination</span>
+                </div>
+              </div>
+              
+              <!-- Multi-Location Delivery Management Card -->
+              <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-blue-800 mb-3">Multi-location delivery management</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Manage resource allocation and capacity planning across onshore (Munich) and offshore (Pune, India & Hungary) locations. Optimize shore mix ratios (80/20 for Silver, 70/30 for Gold) to balance cost efficiency with quality and compliance requirements">Resource allocation</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Define Standard Operating Procedures (SOPs) for ticket handoff between Front Office (Munich) and Back Office (Pune/Hungary). Establish clear workflows for spec → development → review → deployment8 Phase 1 262">Delivery workflows</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Ensure quality gates and compliance standards are maintained across all locations. Mandatory code review by onshore architects, automated CI/CD pipelines, and consistent use of Certified Modules">Quality & compliance</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Leverage TÜV SÜD's existing legal entities in Pune and Hungary to bypass complexity of setting up new offshore subsidiaries. Utilize existing footprints as production assets2.3 69">Legal entity management</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Monitor and optimize labor arbitrage impact (40-50% cost reduction on execution work). Track blended cost rates and adjust shore mix to achieve P&amp;L targets4.1 133-135">Cost optimization</span>
+                </div>
+              </div>
+              
+              <!-- P&L Responsibility Card -->
+              <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-blue-800 mb-3">P&amp;L responsibility</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Financial accountability for platform run costs and EBIT targets. T-Tech operates as internal service provider, must recover costs and generate margins through internal invoicing1.2 15-16">Financial accountability</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Managing €2.8M cost base. Platform run & ops costs (€0.6M), build & evolve (GaC/CaC dev, €0.4M). Baseline absorbs some platform cost (adjustable)">Cost base management</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="Capacity retainers (Bronze), project pricing (Silver), value-based pricing (Gold). Target: €1M positive EBIT through margin capture and cost optimization4.2-4.3 137-152">Revenue generation</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-blue-100 text-blue-800 cursor-help" title="From 4-year break-even to 3-year break-even through labor arbitrage, capacity retainers, and Gold project margin capture1.1 11">Break-even acceleration</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tier-bronze" class="hidden">
+            <h3 class="text-xl font-bold text-stone-700">Bronze — the "enablement" model</h3>
+            
+            <div class="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <!-- Target & Mechanism Card -->
+              <div class="bg-stone-50 border border-stone-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-stone-800 mb-3">Target & mechanism</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="Small operational tweaks and tactical improvements. Individual employees building controlled automations for operational efficiency (e.g., workflow adjustments, data routing, notification tweaks). These are incremental operational changes that must be controlled to avoid breaking larger systems">Target</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="Self-service / Citizen Developer model with highly restrictive governance. Default environment only. Blocked access to critical connectors (SAP, SQL). DLP policies set to 'Business Data Only' for M365 apps. Strict guardrails prevent breaking large cogs in the machine">Mechanism</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="Goal: scale adoption without creating a review bottleneck. Controlled enablement for operational efficiency while protecting larger systems. Increases digital literacy and operational agility without burdening the IT budget 202">Goal</span>
+                </div>
+              </div>
+              
+              <!-- How it uses GaC/CaC Card -->
+              <div class="bg-stone-50 border border-stone-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-stone-800 mb-3">How it uses GaC/CaC</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="Use only certified nodes + templatesauto‑evidence and telemetry are on by default 208">Certified nodes</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="Sandbox environment; promotion triggers evidence + routing rules">Sandbox & routing</span>
+                </div>
+              </div>
+              
+              <!-- Production Approval Card -->
+              <div class="bg-stone-50 border border-stone-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-stone-800 mb-3">Production approval</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="All Bronze tier apps must go through approval process before promotion to production. Uses only Golden Paths? → AUTO-APPROVED (24 hours). Custom logic? → Manual review required 3 256-260">Approval process</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="Automated compliance checks run before production deployment. Evidence packs generated automatically from logs/controls. Human sign-off required for production promotion68-170">Compliance checks</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="Production promotion triggers final review: DLP policy compliance, connector usage audit, telemetry validation. Only apps using certified components get fast-track approval 3 153-154">Production review</span>
+                </div>
+              </div>
+              
+              <!-- Training & Education Card -->
+              <div class="bg-stone-50 border border-stone-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-stone-800 mb-3">Training & GaC education</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="Bronze tier training program marketed as 'Digital Upskilling.' Training curriculum covers platform basics, certified component usage, and compliance awareness4.1 102;8 Phase 3 268">Training curriculum</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="Platform GaC/CaC education: How to use certified connectors, understanding Golden Paths, evidence automation basics. Enablement materials and 'how-to' guidance provided 79">GaC/CaC education</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="Community-led support (Forums, Yammer/Viva Engage) for Bronze tier. Peer-to-peer learning and knowledge sharing. Office Hours available for questions5 Tier 1 127">Community support</span>
+                </div>
+              </div>
+              
+              <!-- Champions Program Card -->
+              <div class="bg-stone-50 border border-stone-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-stone-800 mb-3">Champions program</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="Establish and support division/spoke level champions to drive adoption and best practices. Create network of local advocates who promote platform usage and share success stories 81">Champion network</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="Champions receive advanced training on GaC/CaC components and governance. They act as first-level support and peer mentors within their divisions4.1 102">Champion training</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="Champions provide grassroots momentum for platform adoption. They share success stories, provide peer support, and help identify high-value use cases for escalation 81">Peer advocacy</span>
+                </div>
+              </div>
+              
+              <!-- Spoke Monitoring Card -->
+              <div class="bg-stone-50 border border-stone-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-stone-800 mb-3">Spoke monitoring</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="Monitor Bronze tier activities across spokes for compliance, quality, and alignment with platform standards. Real-time visibility into app usage, connector consumption, and compliance status 3">Activity monitoring</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="Provide feedback, coaching, and escalation paths for Bronze tier makers. Ensure spokes operate within guardrails while maintaining autonomy. Spot audits for compliance">Feedback & coaching</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="Dashboard tracks: App usage, performance, compliance status. Divisions see their own consumptionT-Tech sees aggregate health. Early warning on risky patterns 3">Visibility dashboard</span>
+                </div>
+              </div>
+              
+              <!-- Economic Model Card -->
+              <div class="bg-stone-50 border border-stone-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-stone-800 mb-3">Economic model</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="Retainer/subscription: platform access + enablement + sandbox (€250k illustrative per division). Provides predictable revenue and eliminates micro-invoicing chaos 216">Retainer/subscription</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="Consumption budgeting: premium connectors + AI tokens gated behind value. BPA budgets and gates premium licenses / AI tokens behind value and promotion">Consumption budgeting</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="Predictable chargeback: replaces ticket-by-ticket billing. Divisions pay flat capacity fee for unlimited access to platform, governance, and support 218">Predictable chargeback</span>
+                </div>
+              </div>
+              
+              <!-- Primary P&L Dial Card -->
+              <div class="bg-stone-50 border border-stone-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-stone-800 mb-3">Primary P&amp;L dial</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="Governance strictness / routing: what is auto‑approved vs. escalated. Adjusting the threshold for automatic approval vs. manual review impacts both cost (review overhead) and adoption speeds 224-225">Governance strictness / routing</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="Token budgets: controlling AI token consumption and premium connector usage. Gating costs behind value justification helps manage platform costs while enabling innovation 225">Token budgets</span>
+                </div>
+              </div>
+              
+              <!-- Delivery Model Card -->
+              <div class="bg-stone-50 border border-stone-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-stone-800 mb-3">Delivery model</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="100% in-house (Munich). Community-led support (Forums, Yammer/Viva Engage). No dedicated IT support5 Tier 1 1273 155">In-house delivery</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="~40-50% of projects (numerically, not by value) 156">Volume</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-stone-100 text-stone-800 cursor-help" title="Self-service model with strict guardrails. Goal: scale adoption without creating a review bottleneck 202">Self-service</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tier-silver">
+            <h3 class="text-xl font-bold text-slate-700">Silver — the "global factory" model</h3>
+            
+            <div class="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <!-- Target & Mechanism Card -->
+              <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-slate-800 mb-3">Target & mechanism</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-slate-100 text-slate-700 cursor-help" title="Departments or small cross-functional teams. Business technologists sitting inside divisions (Mobility, Industry, etc.). Standard process automation (e.g., 'harmonize SAP invoice-to-cash workflows,' 'automate testing request intake')5 Tier 2 131-1353 160-162">Target</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-slate-100 text-slate-700 cursor-help" title="Co-creation / Fusion Teams (Business User + Hub Architect). Business leadsT-Tech provides expertise, compliant building blocks, and factory capacity. Smaller custom components and projects5 Tier 2 134Strategy Synthesis 48">Mechanism</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-slate-100 text-slate-700 cursor-help" title="Replace 'Shadow IT' (Excel macros, unauthorized tools) with structured, visible, and secure applications. Lower blended cost with quality via reviews + automated evidence trail5 Tier 2 1393 171">Outcome</span>
+                </div>
+              </div>
+              
+              <!-- How it uses GaC/CaC Card -->
+              <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-slate-800 mb-3">How it uses GaC/CaC</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-slate-100 text-slate-700 cursor-help" title="Client-side builders assemble solutions using golden paths (pre-certified connectors, TISAX-compliant logic) and standard logging/evidence. Must use Golden Pathscode review before promotion to production 3 164-165">Golden paths</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-slate-100 text-slate-700 cursor-help" title="T-Tech delivers custom compliant components (special nodes/connectors) when needed. Dedicated Dataverse environments with ALM (Application Lifecycle Management) required but simplified5 Tier 2 136Strategy Synthesis 48">Custom components</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-slate-100 text-slate-700 cursor-help" title="Reusable outputs graduate into new certified nodes (catalog grows). Access to some premium connectors upon approval5 Tier 2 136">Catalog growth</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-slate-100 text-slate-700 cursor-help" title="Automated compliance checks + spot audits ensure ongoing governance 3 166">Ongoing governance</span>
+                </div>
+              </div>
+              
+              <!-- Delivery Model Card -->
+              <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-slate-800 mb-3">Delivery model</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-slate-100 text-slate-700 cursor-help" title="Hybrid-shore delivery model available: Leverages labor location arbitrage (typically 80/20 offshore/onshore ratio) to optimize costs while maintaining quality. See 'Labor location arbitrage' section for details4.1 134">Hybrid-shore option</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-slate-100 text-slate-700 cursor-help" title="Business leadsT-Tech provides expertise, compliant building blocks, and factory capacity. Co-creation / Fusion Teams (Business User + Hub Architect)5 Tier 2 134">Co-creation model</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-slate-100 text-slate-700 cursor-help" title="Quality gates: Golden Paths + mandatory code review + automated compliance evidence. CI/CD pipeline runs security, compliance, performance checks automatically 3 164-166">Quality gates</span>
+                </div>
+              </div>
+              
+              <!-- Economic Model Card -->
+              <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-slate-800 mb-3">Economic model</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-slate-100 text-slate-700 cursor-help" title="Capacity blocks (retainer-like) for predictable expert support + delivery bandwidth 260">Capacity blocks</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-slate-100 text-slate-700 cursor-help" title="Small projects: custom components and smaller project pricing (T&M / fixed 'small package')">Small projects</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-slate-100 text-slate-700 cursor-help" title="Packaged components: priced add-ons for specialized compliant nodes (reusable accelerators) 262">Packaged components</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-slate-100 text-slate-700 cursor-help" title="~40-50% of projects (by value)">Volume</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-slate-100 text-slate-700 cursor-help" title="Margin capture on labor arbitrage. T-Tech prices retainer at discount vs. external vendors (€50/hour vs. €100/hour), but produces at €25/hour offshore, generating ~50% gross margin4.2 141-143">Margin capture</span>
+                </div>
+              </div>
+              
+              <!-- Primary P&L Dial Card -->
+              <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-slate-800 mb-3">Primary P&amp;L dial</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-slate-100 text-slate-700 cursor-help" title="Shore mix (onshore/offshore ratio): Adjusting the balance between Munich (high-cost, high-touch) and offshore (low-cost, execution) directly impacts labor costs. 80/20 ratio achieves 40-50% cost reduction 2693 168">Shore mix</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-slate-100 text-slate-700 cursor-help" title="Standardization (reuse rate): Increasing the reuse rate of certified components and templates reduces development time and cost. Higher reuse = lower cost per project 269">Standardization (reuse rate)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tier-gold" class="hidden">
+            <h3 class="text-xl font-bold text-amber-700">Gold — the "SWAT team" model</h3>
+            
+            <div class="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <!-- Target & Mechanism Card -->
+              <div class="bg-amber-50 border border-amber-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-amber-800 mb-3">Target & mechanism</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-amber-100 text-amber-800 cursor-help" title="Cross-divisional processes or high-risk areas (Mobility/Industry) – 'The Big Fish' (67% of impact). High-impact strategic projects (e.g., M&A integration, cross-divisional harmonization)5 Tier 3 141-1433 173-175">Target</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-amber-100 text-amber-800 cursor-help" title="Full Professional Delivery by T-Tech (Pro-Code Developers). SWAT teams (T-Tech architects + offshore developers). Premium governance, security sign-off, measurable outcomes5 Tier 3 1443 174">Mechanism</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-amber-100 text-amber-800 cursor-help" title="Industry & Infrastructure merger integration (€800k+ project value, 6-month project). Mobility TISAX/compliance workflow automation (€500k+ project value, 5-month project). Global Audit Management System, TISAX Compliance Tracker 3 177-178;5 Tier 3 145">Examples</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-amber-100 text-amber-800 cursor-help" title="Drive the €1M EBIT impact through high-value transformation and internal revenue generation. Showcase wins + margin capture + strategic credibility5 Tier 3 1493 189">Outcome</span>
+                </div>
+              </div>
+              
+              <!-- How it uses GaC/CaC Card -->
+              <div class="bg-amber-50 border border-amber-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-amber-800 mb-3">How it uses GaC/CaC</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-amber-100 text-amber-800 cursor-help" title="Use the catalog as a baselineadd premium controls (security sign‑off, pen test, SoD). Enterprise-grade code review and security assessment by T-Tech security team 3 180-181">Premium controls</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-amber-100 text-amber-800 cursor-help" title="Rigorous governance: Full CI/CD pipelines (Azure DevOps). Penetration testing. Worker Council approval. ISO 27001/TISAX compliance certification5 Tier 3 146">Rigorous governance</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-amber-100 text-amber-800 cursor-help" title="TISAX/GDPR pre-certification. Ongoing support and monitoring (24/7 SLA-backed support)">Pre-certification & SLA</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-amber-100 text-amber-800 cursor-help" title="Harvest generic pieces into new certified building blocks (factory gets stronger). Reusable gains from SWAT team projects are captured for the GaC/CaC component set 3 201Strategy Synthesis 50">Component harvesting</span>
+                </div>
+              </div>
+              
+              <!-- Delivery Model Card -->
+              <div class="bg-amber-50 border border-amber-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-amber-800 mb-3">Delivery model</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-amber-100 text-amber-800 cursor-help" title="Hybrid-shore option: Leverages labor location arbitrage (typically 70/30 offshore/onshore ratio) to optimize costs while maintaining premium quality. Onshore handles architecture, stakeholder management, and complianceoffshore handles execution, testing, and deployment. See 'Labor location arbitrage' section for details4.1 1343">Hybrid-shore option</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-amber-100 text-amber-800 cursor-help" title="SWAT team model: T-Tech architects + offshore developers. Spec & Architecture (Munich, 2-3 weeks) → Development (Offshore, 4-6 weeks) → Code Review (Munich, 1 week) → Testing & Deployment (Hybrid, 2 weeks) Case Study Strategy, Q&A Q4 469-474">SWAT team model</span>
+                </div>
+              </div>
+              
+              <!-- What makes something Gold Card -->
+              <div class="bg-amber-50 border border-amber-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-amber-800 mb-3">What makes something 'Gold'</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-amber-100 text-amber-800 cursor-help" title="High impact: Cross‑divisional or mission‑critical outcomes 3 207-209">High impact</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-amber-100 text-amber-800 cursor-help" title="High compliance: Security sign‑off + audit evidence is non‑negotiable. Mission-critical apps requiring integration with SAP, PLM, and legacy systems 3 207-209;5 Tier 3 145">High compliance</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-amber-100 text-amber-800 cursor-help" title="Measured as ROI/risk: not tickets closed. Success metrics focus on business value, strategic outcomes, and risk mitigation rather than volume of work completed 3 207-209">Measured as ROI/risk</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-amber-100 text-amber-800 cursor-help" title="Volume: 5-10% of projects (by count), 40-50% of value">Volume</span>
+                </div>
+              </div>
+              
+              <!-- Economic Model Card -->
+              <div class="bg-amber-50 border border-amber-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-amber-800 mb-3">Economic model</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-amber-100 text-amber-800 cursor-help" title="Pricing: Full Project Budget (T&M or Fixed Price) + Annual Service Level Agreement (SLA) charge. Fixed project fee OR value-based (share of efficiency gains). Charge divisions fair market rate (€3.5k/person-month), deliver at lower blended cost (offshore), capture margin5 Tier 3 1483 188-189Slide 2 91">Pricing model</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-amber-100 text-amber-800 cursor-help" title="Target: 2-3 Gold projects/year × €0.4M margin = €0.8M-€1.2M. High-margin (30%+) revenue driver 2 92-93Slide 3 189">Target volume</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-amber-100 text-amber-800 cursor-help" title="Financial Contribution: Primary driver of €1M positive EBIT target. Profit margin from high-value projects subsidizes Front Office overhead and governance investments4.3 150-152">EBIT contribution</span>
+                </div>
+              </div>
+              
+              <!-- Primary P&L Dial Card -->
+              <div class="bg-amber-50 border border-amber-200 rounded-lg p-4">
+                <div class="text-sm font-semibold text-amber-800 mb-3">Primary P&amp;L dial</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-amber-100 text-amber-800 cursor-help" title="Project selection & pricing (margin target): Choosing which projects to pursue and setting pricing to achieve target margins. Focus on high-value, high-impact opportunities that justify premium pricing">Project selection & pricing</span>
+                  <span class="text-xs font-semibold px-2 py-1 rounded bg-amber-100 text-amber-800 cursor-help" title="Catalog lift harvest: How much reusable 'catalog lift' you harvest per engagement. Reusable gains from SWAT team projects are captured for the GaC/CaC component set, strengthening the factory 3113 201">Catalog lift harvest</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mt-12">Risk and value proportional governance</h2>
+        <p class="text-sm text-slate-600 mt-2">
+          Governance scales with both risk and value. Using Golden Paths = fast approval. Custom work = manual review based on risk level and business value. This removes the "police bottleneck": teams choose Golden Paths because it's the fastest route to production.
+        </p>
+
+        <div class="mt-6 bg-white rounded-xl shadow-sm border border-slate-200 p-5">
+          <h3 class="text-lg font-bold text-slate-800 mb-4">Work item creation and routing workflow</h3>
+          
+          <div class="mt-4 space-y-6">
+            <!-- Step 1: Work Item Creation -->
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white font-bold text-sm">1</span>
+                <h4 class="text-base font-semibold text-slate-800">Work item creation</h4>
+              </div>
+              <div class="ml-11 space-y-2 text-sm text-slate-700">
+                <p><strong>Who creates:</strong> Business users, citizen developers, or business technologists submit automation requests through the platform portal.</p>
+                <p><strong>Initial assessment:</strong> Each work item is evaluated for:</p>
+                <ul class="list-disc list-inside space-y-1 ml-4">
+                  <li><strong>Value:</strong> Business impact, ROI potential, strategic alignment (cross-divisional, mission-critical, efficiency gains)</li>
+                  <li><strong>Risk:</strong> Data sensitivity, compliance requirements (TISAX, GDPR), integration complexity, system criticality</li>
+                  <li><strong>Scope:</strong> Personal productivity, team workflow, or enterprise-wide process</li>
+                </ul>
+                <p><strong>Routing decision:</strong> Based on value and risk assessment, work items are automatically routed to the appropriate tier (Bronze, Silver, or Gold).</p>
+              </div>
+            </div>
+
+            <!-- Step 2: Golden Path Check -->
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white font-bold text-sm">2</span>
+                <h4 class="text-base font-semibold text-slate-800">Golden Path compliance check</h4>
+              </div>
+              <div class="ml-11 space-y-2 text-sm text-slate-700">
+                <p><strong>Automated scan:</strong> The platform automatically checks if the work item uses only pre-certified Golden Paths (certified connectors, templates, and components from the GaC/CaC catalog).</p>
+                <p><strong>AI-powered compliance:</strong> Golden Path compliance checking can be automated via RAG (Retrieval-Augmented Generation) and special AI workflows that analyze work item specifications against the certified component catalog, ensuring accurate routing and compliance validation.</p>
+                <div class="bg-white border border-slate-200 rounded-md p-3 mt-3">
+                  <p class="font-semibold mb-2">Decision point:</p>
+                  <div class="space-y-2">
+                    <div class="flex items-start gap-2">
+                      <span class="text-emerald-600 font-bold">✓ YES</span>
+                      <span class="text-slate-600">→ Auto-approved (≈24 hours) → Bronze/Silver tier deployment</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                      <span class="text-amber-600 font-bold">✗ NO</span>
+                      <span class="text-slate-600">→ Manual review required → Risk and value assessment</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-3"><strong>Value proposition:</strong> Teams choose Golden Paths because they're faster (24-hour approval) rather than being forced. Custom logic triggers 6-week manual review, creating natural incentive alignment.</p>
+              </div>
+            </div>
+
+            <!-- Step 3: Manual Review Path -->
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white font-bold text-sm">3</span>
+                <h4 class="text-base font-semibold text-slate-800">Manual review and risk/value assessment</h4>
+              </div>
+              <div class="ml-11 space-y-3 text-sm text-slate-700">
+                <p>When work items require custom logic or deviate from Golden Paths, they enter a manual review process that evaluates both risk and value. <strong>High risk items and Gold tier activities are always custom projects</strong> requiring specialized delivery.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mt-4">
+                  <div class="bg-white border border-emerald-200 rounded-lg p-3">
+                    <div class="font-semibold text-emerald-800 mb-2">Low Risk</div>
+                    <ul class="text-xs text-slate-600 space-y-1">
+                      <li>• Standard departmental workflows</li>
+                      <li>• Non-sensitive data</li>
+                      <li>• Limited integration scope</li>
+                      <li>• Moderate business value</li>
+                    </ul>
+                    <div class="mt-3 pt-3 border-t border-emerald-200">
+                      <div class="text-xs font-semibold text-slate-700">Review: ~1 week</div>
+                      <div class="text-xs text-slate-600">→ Routed to Silver tier</div>
+                    </div>
+                  </div>
+
+                  <div class="bg-white border border-amber-200 rounded-lg p-3">
+                    <div class="font-semibold text-amber-800 mb-2">Mid Risk</div>
+                    <ul class="text-xs text-slate-600 space-y-1">
+                      <li>• Cross-functional workflows</li>
+                      <li>• Some sensitive data handling</li>
+                      <li>• Multiple system integrations</li>
+                      <li>• Significant business value</li>
+                    </ul>
+                    <div class="mt-3 pt-3 border-t border-amber-200">
+                      <div class="text-xs font-semibold text-slate-700">Review: ~2 weeks</div>
+                      <div class="text-xs text-slate-600">→ CoE assessment required</div>
+                      <div class="text-xs text-slate-600">→ Routed to Silver tier</div>
+                    </div>
+                  </div>
+
+                  <div class="bg-white border border-red-200 rounded-lg p-3">
+                    <div class="font-semibold text-red-800 mb-2">High Risk</div>
+                    <ul class="text-xs text-slate-600 space-y-1">
+                      <li>• Mission-critical systems</li>
+                      <li>• TISAX/GDPR sensitive data</li>
+                      <li>• Complex legacy integrations</li>
+                      <li>• High strategic value</li>
+                    </ul>
+                    <div class="mt-3 pt-3 border-t border-red-200">
+                      <div class="text-xs font-semibold text-slate-700">Review: ~4 weeks</div>
+                      <div class="text-xs text-slate-600">→ CISO sign-off required</div>
+                      <div class="text-xs text-slate-600">→ Always custom project</div>
+                      <div class="text-xs text-slate-600">→ Routed to Gold tier</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-4 bg-slate-100 border border-slate-300 rounded-lg p-4">
+                  <div class="font-semibold text-slate-800 mb-2">Silver tier backlog scheduling</div>
+                  <p class="text-sm text-slate-700 mb-2">For Silver tier work items (custom components and mini projects), the Step 3 decision determines placement in the <strong>public BPA backlog</strong>:</p>
+                  <ul class="text-sm text-slate-700 space-y-1 list-disc list-inside ml-2">
+                    <li>Work items are prioritized based on value, risk level, and business impact</li>
+                    <li>Custom components and mini projects are scheduled for delivery by the factory (offshore/onshore hybrid model)</li>
+                    <li>The backlog is publicly visible to all divisions, providing transparency on delivery capacity and timelines</li>
+                    <li>Delivery estimates are provided based on backlog position, resource availability, and project complexity</li>
+                  </ul>
+                </div>
+
+                <div class="mt-4 bg-amber-50 border border-amber-200 rounded-lg p-4">
+                  <div class="font-semibold text-amber-800 mb-2">Public backlog transparency</div>
+                  <p class="text-sm text-slate-700 mb-2">BPA maintains a <strong>public backlog of Silver and Gold tier projects</strong> with delivery estimates:</p>
+                  <ul class="text-sm text-slate-700 space-y-1 list-disc list-inside ml-2">
+                    <li><strong>Silver tier backlog:</strong> Custom components, mini projects, and standard process automation work items with estimated delivery dates</li>
+                    <li><strong>Gold tier backlog:</strong> Strategic enterprise projects (always custom) with delivery timelines and resource allocation</li>
+                    <li><strong>Visibility:</strong> All divisions can view the backlog, understand capacity, and see when their work items are scheduled</li>
+                    <li><strong>Delivery estimates:</strong> Based on backlog position, project complexity, and factory capacity (onshore/offshore mix)</li>
+                    <li><strong>Prioritization:</strong> High-value, high-impact items are prioritized, but transparency ensures fair allocation across divisions</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 4: Approval and Production -->
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white font-bold text-sm">4</span>
+                <h4 class="text-base font-semibold text-slate-800">Approval and production deployment</h4>
+              </div>
+              <div class="ml-11 space-y-3 text-sm text-slate-700">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div>
+                    <div class="font-semibold text-stone-800 mb-2">Bronze tier approval</div>
+                    <ul class="text-xs text-slate-600 space-y-1">
+                      <li>• Automated compliance checks run</li>
+                      <li>• Evidence packs generated from logs/controls</li>
+                      <li>• Human sign-off required for production promotion</li>
+                      <li>• DLP policy compliance verified</li>
+                      <li>• Connector usage audit completed</li>
+                      <li>• <strong>Timeline:</strong> 24 hours (auto-approval) or 1 week (manual review)</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <div class="font-semibold text-slate-800 mb-2">Silver tier approval</div>
+                    <ul class="text-xs text-slate-600 space-y-1">
+                      <li>• Code review by Munich architects</li>
+                      <li>• Automated compliance evidence generation</li>
+                      <li>• ALM pipeline validation (Dev/Test/Prod)</li>
+                      <li>• Quality gates: Golden Paths + review + automated checks</li>
+                      <li>• Production promotion triggers final review</li>
+                      <li>• <strong>Timeline:</strong> 1-2 weeks (standard review)</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <div class="font-semibold text-amber-800 mb-2">Gold tier approval</div>
+                    <ul class="text-xs text-slate-600 space-y-1">
+                      <li>• Enterprise-grade code review</li>
+                      <li>• Security assessment by T-Tech security team</li>
+                      <li>• Penetration testing required</li>
+                      <li>• CISO sign-off mandatory</li>
+                      <li>• Worker Council approval (if applicable)</li>
+                      <li>• TISAX/GDPR pre-certification</li>
+                      <li>• <strong>Timeline:</strong> 4 weeks + security sign-off</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
+            <h4 class="text-base font-semibold text-blue-800 mb-2">Key governance principles</h4>
+            <ul class="text-sm text-slate-700 space-y-1 list-disc list-inside">
+              <li><strong>Compliance by design:</strong> Golden Paths are pre-certified, making compliance automatic rather than a gate</li>
+              <li><strong>Value-driven routing:</strong> High-value opportunities (cross-divisional, strategic) are prioritized and routed to appropriate tiers</li>
+              <li><strong>Risk-proportional review:</strong> Review depth and duration scale with risk level, not uniformly applied</li>
+              <li><strong>Speed through standards:</strong> Teams are incentivized to use Golden Paths because it's faster, not because it's mandated</li>
+              <li><strong>Evidence automation:</strong> Audit trails and compliance evidence are generated automatically, reducing manual overhead</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mt-12">Organizational structure & sizing</h2>
+        <p class="text-sm text-slate-600 mt-2">
+          The organization is structured into Front Office (high-touch, Munich) and Back Office (factory execution, offshore), with Fusion Teams embedded in divisions.
+        </p>
+
+        <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 border-l-4 border-blue-600">
+            <h3 class="text-lg font-bold text-slate-800 mb-3">The Hub (T-Tech CoE) — Munich</h3>
+            <div class="text-sm text-slate-700 space-y-2">
+              <p class="font-semibold">Core Teams:</p>
+              <ul class="list-disc list-inside space-y-1 ml-2">
+                <li><strong>Golden Paths team:</strong> SAP, Dynamics, Azure connectors and templates</li>
+                <li><strong>Governance automation:</strong> DLP policies, compliance workflows, evidence automation</li>
+                <li><strong>Security & compliance:</strong> CISO integration, TISAX/GDPR certification, audit readiness</li>
+                <li><strong>Offshore factory management:</strong> Resource allocation, quality gates, delivery coordination</li>
+              </ul>
+              <p class="mt-3 font-semibold">Front Office Roles (Munich):</p>
+              <ul class="list-disc list-inside space-y-1 ml-2">
+                <li>Business Partners (hunt for "Big Fish" opportunities)</li>
+                <li>Solution Architects (specification, design, compliance)</li>
+                <li>Engagement Managers (stakeholder management, political navigation)</li>
+                <li>Platform Engineers (GaC/CaC product development)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 border-l-4 border-slate-400">
+            <h3 class="text-lg font-bold text-slate-800 mb-3">Back Office Factory — Offshore</h3>
+            <div class="text-sm text-slate-700 space-y-2">
+              <p class="font-semibold">Factory Roles (Pune/Hungary):</p>
+              <ul class="list-disc list-inside space-y-1 ml-2">
+                <li>Power Platform Developers (execution, standard workflows)</li>
+                <li>QA Engineers (testing, quality assurance)</li>
+                <li>DevOps Specialists (CI/CD, deployment automation)</li>
+                <li>Support Ops (maintenance, monitoring)</li>
+              </ul>
+              <p class="mt-3 font-semibold">Ramp-up Plan:</p>
+              <ul class="list-disc list-inside space-y-1 ml-2">
+                <li><strong>Months 1-3:</strong> Initial team: 8-10 people</li>
+                <li><strong>Months 4-9:</strong> Scale to 20+ people</li>
+                <li><strong>Target capacity:</strong> 80% of Silver tier execution volume</li>
+              </ul>
+              <p class="mt-3 font-semibold">Quality Model:</p>
+              <ul class="list-disc list-inside space-y-1 ml-2">
+                <li>Work from Munich-defined specifications</li>
+                <li>Use Certified Modules (Golden Paths) only</li>
+                <li>Mandatory code review by Munich architects</li>
+                <li>Automated compliance checks in CI/CD pipeline</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 bg-white rounded-xl shadow-sm border border-slate-200 p-5">
+          <h3 class="text-lg font-bold text-slate-800 mb-3">Fusion Teams (Spokes) — Division-Embedded</h3>
+          <p class="text-sm text-slate-600 mb-4">
+            Business Technologists and Developers embedded within divisions, organized as Fusion Teams that combine business context with technical delivery.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+            <div class="bg-stone-50 border border-stone-200 rounded-lg p-3">
+              <div class="font-semibold text-stone-800">Industry & Infrastructure</div>
+              <div class="text-sm text-slate-600 mt-2">
+                <div>2 Business Technologists</div>
+                <div>10 Developers</div>
+                <div class="text-xs text-slate-500 mt-1">(50% local lead, 50% offshore execution)</div>
+              </div>
+            </div>
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-3">
+              <div class="font-semibold text-slate-800">Mobility</div>
+              <div class="text-sm text-slate-600 mt-2">
+                <div>2 Business Technologists</div>
+                <div>8 Developers</div>
+                <div class="text-xs text-slate-500 mt-1">(50% local lead, 50% offshore execution)</div>
+              </div>
+            </div>
+            <div class="bg-amber-50 border border-amber-200 rounded-lg p-3">
+              <div class="font-semibold text-amber-800">Product Service</div>
+              <div class="text-sm text-slate-600 mt-2">
+                <div>1 Business Technologist</div>
+                <div>4 Developers</div>
+                <div class="text-xs text-slate-500 mt-1">(50% local lead, 50% offshore execution)</div>
+              </div>
+            </div>
+            <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
+              <div class="font-semibold text-blue-800">Business Assurance</div>
+              <div class="text-sm text-slate-600 mt-2">
+                <div>1 Business Technologist</div>
+                <div>6 Developers</div>
+                <div class="text-xs text-slate-500 mt-1">(50% local lead, 50% offshore execution)</div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 bg-slate-50 border border-slate-200 rounded-lg p-3">
+            <p class="text-sm text-slate-700">
+              <strong>Note:</strong> Business Technologists report to their respective divisions (not T-Tech), ensuring business alignment. Developers work in a hybrid model: local leads handle architecture and stakeholder management; offshore developers handle execution and testing. This model balances cost efficiency (40-50% reduction) with quality and compliance.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-4 bg-white rounded-xl shadow-sm border border-slate-200 p-5 border-l-4 border-emerald-600">
+          <h3 class="text-lg font-bold text-slate-800 mb-3">Total Organization Sizing</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-emerald-50 border border-emerald-200 rounded-lg p-3">
+              <div class="text-sm font-semibold text-emerald-800">Hub (CoE) — Munich</div>
+              <div class="text-lg font-bold text-emerald-700 mt-1">~12-15 FTE</div>
+              <div class="text-xs text-slate-600 mt-1">Front Office: Architects, Business Partners, Platform Engineers</div>
+            </div>
+            <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
+              <div class="text-sm font-semibold text-blue-800">Back Office Factory — Offshore</div>
+              <div class="text-lg font-bold text-blue-700 mt-1">20+ FTE</div>
+              <div class="text-xs text-slate-600 mt-1">Developers, QA, DevOps (Pune/Hungary)</div>
+            </div>
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-3">
+              <div class="text-sm font-semibold text-slate-800">Fusion Teams — Divisions</div>
+              <div class="text-lg font-bold text-slate-700 mt-1">6 BT + 28 DE</div>
+              <div class="text-xs text-slate-600 mt-1">Business Technologists + Developers (hybrid model)</div>
+            </div>
+          </div>
+          <p class="text-sm text-slate-600 mt-4">
+            <strong>Total capacity:</strong> ~60-65 FTE equivalent (including hybrid model). This structure enables delivery of 400+ projects/year while achieving the €1M EBIT target through labor arbitrage, retainer revenue, and Gold project margin capture.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mt-12">Labor location arbitrage</h2>
+        <p class="text-sm text-slate-600 mt-2">
+          T-Tech leverages TÜV SÜD's existing global footprint to optimize delivery costs while maintaining quality and compliance standards.
+        </p>
+
+        <div class="mt-4 bg-white rounded-xl shadow-sm border border-slate-200 p-5 border-l-4 border-blue-600">
+          <h3 class="text-lg font-bold text-slate-800">Multi-location delivery capability</h3>
+          <p class="text-sm text-slate-700 mt-2">
+            T-Tech can leverage multiple locations within the TÜV SÜD global footprint to optimize cost and delivery efficiency:
+          </p>
+          <ul class="text-sm text-slate-700 mt-3 list-disc list-inside space-y-2">
+            <li><strong>Onshore (Munich, Germany):</strong> Front Office functions—Solution Architects, Engagement Managers, Business Analysts. High-touch, German-speaking, culturally aligned with HQ. Handles architecture, stakeholder management, risk/security alignment, and political complexities. TÜV SÜD's headquarters and primary operations center in Germany <a href="https://www.tuvsud.com/en/about-us" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">[TÜV SÜD About Us]</a></li>
+            <li><strong>Offshore (Pune, India & Hungary):</strong> Back Office factory—Developers, QA Engineers, Support Ops. TÜV SÜD operates globally with facilities in over 50 countries, including significant presence in India and Eastern Europe. These locations serve as production assets, leveraging existing legal entities to optimize delivery costs <a href="https://www.tuvsud.com/en/about-us/global-presence" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">[TÜV SÜD Global Presence]</a>. India and Eastern Europe are established offshore development hubs with proven cost advantages <a href="https://www.gartner.com/en/articles/offshore-development-centers-odc-benefits-and-best-practices" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">[Gartner: Offshore Development Centers]</a></li>
+            <li><strong>China (21Vianet):</strong> Separate tenant strategy for data residency compliance. Federated architecture with same policy templates as global tenant. China's Cybersecurity Law (CSL) and Personal Information Protection Law (PIPL) require data residency for Chinese operations <a href="https://www.tuvsud.com/en/about-us/asia-pacific" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">[TÜV SÜD Asia Pacific]</a></li>
+          </ul>
+
+          <div class="mt-4 bg-slate-50 border border-slate-200 rounded-lg p-4">
+            <div class="text-sm font-semibold text-slate-700">Cost optimization impact</div>
+            <ul class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1">
+              <li><strong>Labor arbitrage:</strong> Shifting execution work to offshore locations reduces blended cost rate by 40-50% through geographic cost differentials. Industry studies show typical savings of 30-60% for offshore development work <a href="https://www.mckinsey.com/capabilities/operations/our-insights/the-future-of-offshoring-in-a-postcovid-19-world" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">[McKinsey: Future of Offshoring]</a>. Example: 100-hour Silver Tier app costs €10,000 in Munich vs. €3,000 in offshore locations</li>
+              <li><strong>Typical mix:</strong> 80% offshore (execution, testing, standard workflows) + 20% onshore (architecture, review, risk management) achieves optimal cost/quality balance. This hybrid model is standard practice in global IT delivery <a href="https://www.accenture.com/us-en/insights/technology/offshore-development" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">[Accenture: Offshore Development]</a></li>
+              <li><strong>Quality protection:</strong> Offshore teams use Certified Modules and follow Golden Paths. Mandatory code review by onshore architects ensures quality. CI/CD pipeline runs automated compliance checks. Quality frameworks and governance models mitigate risks in distributed delivery <a href="https://www.pmi.org/learning/library/distributed-teams-quality-assurance-7092" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">[PMI: Distributed Teams Quality]</a></li>
+            </ul>
+          </div>
+
+          <div class="mt-4 bg-slate-50 border border-slate-200 rounded-lg p-4">
+            <div class="text-sm font-semibold text-slate-700">Application across tiers</div>
+            <ul class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1">
+              <li><strong>Platform & Governance:</strong> Hub manages multi-location delivery strategy, quality gates, and resource allocation across locations</li>
+              <li><strong>Bronze:</strong> Primarily in-house (Munich) for enablement and support</li>
+              <li><strong>Silver:</strong> Hybrid-shore model (80/20 offshore/onshore) for cost-efficient factory execution</li>
+              <li><strong>Gold:</strong> Hybrid-shore model (70/30 offshore/onshore) for premium delivery with cost optimization</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Badge Description Modal -->
+    <div id="badgeModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm" aria-labelledby="badgeModalTitle" role="dialog" aria-modal="true">
+      <div class="bg-white rounded-xl shadow-xl max-w-2xl w-full mx-4 max-h-[80vh] overflow-hidden flex flex-col">
+        <div class="flex items-center justify-between p-5 border-b border-slate-200">
+          <h3 id="badgeModalTitle" class="text-lg font-bold text-slate-800">Badge Details</h3>
+          <button id="badgeModalClose" class="text-slate-400 hover:text-slate-600 transition-colors" aria-label="Close modal">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="p-5 overflow-y-auto flex-1">
+          <p id="badgeModalContent" class="text-sm text-slate-700 leading-relaxed"></p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="max-w-6xl mx-auto px-4 py-10">
+      <div class="h-px bg-slate-200"></div>
+      <p class="text-sm text-slate-500 mt-4">Next: see the <a class="text-blue-600 hover:underline" href="roadmap.html">Roadmap</a> for the 18-month rollout plan and KPIs.</p>
+    </footer>
+
+    <script>
+      // Pyramid calculation with consistent angle
+      (function() {
+        const svg = document.getElementById("pyramidChart");
+        if (!svg) return;
+
+        const centerX = 200;
+        const apexY = 40// Top point of pyramid
+        const baseY = 320// Bottom of pyramid
+        const apexX = centerX;
+        
+        // Calculate the slope angle - use the base width to determine angle
+        const baseWidth = 360// Desired base width
+        const halfBaseWidth = baseWidth / 2;
+        const height = baseY - apexY;
+        const slope = halfBaseWidth / height// This is tan(angle)
+
+        // Tier definitions: [yTop, yBottom, label, subtitle, fill, stroke]
+        const tiers = [
+          { yTop: 240, yBottom: 320, label: "Platform & Governance", subtitle: "The basics", fill: "#64748b", stroke: "#475569", fontSize: 14, subFontSize: 11 },
+          { yTop: 180, yBottom: 240, label: "Bronze", subtitle: "Enablement & guardrails", fill: "#78716c", stroke: "#57534e", fontSize: 13, subFontSize: 10 },
+          { yTop: 120, yBottom: 180, label: "Silver", subtitle: "Factory execution", fill: "#475569", stroke: "#334155", fontSize: 13, subFontSize: 10 },
+          { yTop: 40, yBottom: 120, label: "Gold", subtitle: "SWAT teams", fill: "#b45309", stroke: "#92400e", fontSize: 11, subFontSize: 9 }
+        ];
+
+        // Draw tiers from bottom to top
+        for (let i = tiers.length - 1; i >= 0; i--) {
+          const tier = tiers[i];
+          
+          // Calculate width at top and bottom based on consistent slope
+          const topWidth = (tier.yTop - apexY) * slope * 2;
+          const bottomWidth = (tier.yBottom - apexY) * slope * 2;
+          
+          const topLeft = centerX - topWidth / 2;
+          const topRight = centerX + topWidth / 2;
+          const bottomLeft = centerX - bottomWidth / 2;
+          const bottomRight = centerX + bottomWidth / 2;
+
+          // Create polygon
+          const polygon = document.createElementNS("http://www.w3.org/2000/svg", "polygon");
+          const points = `${bottomLeft},${tier.yBottom} ${bottomRight},${tier.yBottom} ${topRight},${tier.yTop} ${topLeft},${tier.yTop}`;
+          polygon.setAttribute("points", points);
+          polygon.setAttribute("fill", tier.fill);
+          polygon.setAttribute("stroke", tier.stroke);
+          polygon.setAttribute("stroke-width", "2");
+          svg.appendChild(polygon);
+
+          // Add text labels
+          const textY = (tier.yTop + tier.yBottom) / 2 + 8// Push text down
+          const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+          label.setAttribute("x", centerX);
+          label.setAttribute("y", textY - 3);
+          label.setAttribute("text-anchor", "middle");
+          label.setAttribute("fill", "white");
+          label.setAttribute("font-size", tier.fontSize);
+          label.setAttribute("font-weight", "bold");
+          label.textContent = tier.label;
+          svg.appendChild(label);
+
+          const subtitle = document.createElementNS("http://www.w3.org/2000/svg", "text");
+          subtitle.setAttribute("x", centerX);
+          subtitle.setAttribute("y", textY + 9);
+          subtitle.setAttribute("text-anchor", "middle");
+          subtitle.setAttribute("fill", "white");
+          subtitle.setAttribute("font-size", tier.subFontSize);
+          subtitle.textContent = tier.subtitle;
+          svg.appendChild(subtitle);
+        }
+
+        // Add volume indicator
+        const volumeText = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        volumeText.setAttribute("x", centerX);
+        volumeText.setAttribute("y", 345);
+        volumeText.setAttribute("text-anchor", "middle");
+        volumeText.setAttribute("fill", "#64748b");
+        volumeText.setAttribute("font-size", "11");
+        volumeText.setAttribute("font-style", "italic");
+        volumeText.textContent = "Volume: Platform > Bronze > Silver > Gold";
+        svg.appendChild(volumeText);
+      })();
+    </script>
+
+    <script>
+      /** @type {NodeListOf<HTMLElement>} */
+      const cards = document.querySelectorAll("[data-tier-card]");
+      /** @type {Record<string, HTMLElement>} */
+      const panels = {
+        platform: document.getElementById("tier-platform"),
+        bronze: document.getElementById("tier-bronze"),
+        silver: document.getElementById("tier-silver"),
+        gold: document.getElementById("tier-gold")
+      };
+
+      /** @param {"platform"|"bronze"|"silver"|"gold"} tier */
+      function selectTier(tier) {
+        for (const c of cards) {
+          c.classList.toggle("active-card", c.getAttribute("data-tier-card") === tier);
+        }
+        for (const [k, el] of Object.entries(panels)) {
+          el.classList.toggle("hidden", k !== tier);
+        }
+      }
+
+      for (const c of cards) {
+        c.addEventListener("click", () => {
+          const tier = /** @type {"platform"|"bronze"|"silver"|"gold"} */ (c.getAttribute("data-tier-card"));
+          selectTier(tier);
+        });
+      }
+
+      selectTier("platform");
+    </script>
+
+    <script>
+      // Badge modal functionality
+      const badgeModal = document.getElementById("badgeModal");
+      const badgeModalTitle = document.getElementById("badgeModalTitle");
+      const badgeModalContent = document.getElementById("badgeModalContent");
+      const badgeModalClose = document.getElementById("badgeModalClose");
+
+      /** @param {string} badgeText */
+      /** @param {string} description */
+      function showBadgeModal(badgeText, description) {
+        badgeModalTitle.textContent = badgeText;
+        badgeModalContent.textContent = description;
+        badgeModal.classList.remove("hidden");
+        document.body.style.overflow = "hidden"// Prevent background scrolling
+      }
+
+      function hideBadgeModal() {
+        badgeModal.classList.add("hidden");
+        document.body.style.overflow = ""// Restore scrolling
+      }
+
+      // Close modal on close button click
+      badgeModalClose.addEventListener("click", hideBadgeModal);
+
+      // Close modal on backdrop click
+      badgeModal.addEventListener("click", (e) => {
+        if (e.target === badgeModal) {
+          hideBadgeModal();
+        }
+      });
+
+      // Close modal on ESC key
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && !badgeModal.classList.contains("hidden")) {
+          hideBadgeModal();
+        }
+      });
+
+      // Find all badges with tooltips (cursor-help class) and add click handlers
+      /** @type {NodeListOf<HTMLElement>} */
+      const badges = document.querySelectorAll(".cursor-help[title]");
+      
+      for (const badge of badges) {
+        badge.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const badgeText = badge.textContent.trim();
+          const description = badge.getAttribute("title") || "";
+          if (description) {
+            showBadgeModal(badgeText, description);
+          }
+        });
+        
+        // Change cursor to pointer to indicate clickability
+        badge.style.cursor = "pointer";
+      }
+    </script>
+  </body>
+</html>
+
+

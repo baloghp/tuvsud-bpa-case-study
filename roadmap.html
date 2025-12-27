@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Digital Trust Factory — Roadmap</title>
+    <meta name="description" content="18-month roadmap and KPIs for scaling Power Platform automation as a factory." />
+    <meta name="color-scheme" content="light" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif; }
+    </style>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="assets/js/site.js" defer></script>
+  </head>
+  <body class="bg-slate-50 text-slate-800">
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:justify-between md:h-16 md:items-center py-3 md:py-0 gap-2">
+          <div class="flex items-center gap-3">
+            <span class="text-xl font-bold text-blue-600">TÜV SÜD</span>
+            <span class="text-slate-400">|</span>
+            <span class="text-slate-600 font-medium">Digital Trust Factory</span>
+          </div>
+          <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
+            <a data-nav href="index.html" class="text-slate-600 hover:text-blue-600">Summary</a>
+            <a data-nav href="tuv-context.html" class="text-slate-600 hover:text-blue-600">TÜV Context</a>
+            <a data-nav href="strategy.html" class="text-slate-600 hover:text-blue-600">Strategy</a>
+            <a data-nav href="operating-model.html" class="text-slate-600 hover:text-blue-600">Operating Model</a>
+            <a data-nav href="roadmap.html" class="text-slate-600 hover:text-blue-600">Roadmap</a>
+            <a data-nav href="fit.html" class="text-slate-600 hover:text-blue-600">Personal Fit</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 py-10">
+      <header class="bg-gradient-to-r from-blue-700 to-cyan-600 text-white rounded-2xl px-6 py-10 shadow-sm">
+        <h1 class="text-3xl md:text-4xl font-bold">18-month Roadmap</h1>
+        <p class="mt-2 text-white/90 max-w-2xl">Rollout plan: foundations → scale → margin capture.</p>
+      </header>
+
+      <div class="mt-8 bg-white rounded-xl shadow-sm border border-slate-200 p-5 border-l-4 border-blue-600">
+        <p class="text-slate-800">
+          <span class="font-bold">Takeaway:</span> Build Platform & Governance foundation first (GaC/CaC product, visibility, governance automation), then scale the factory (offshore + Silver), then harvest margin (Gold projects).
+        </p>
+      </div>
+
+      <section>
+        <h2 class="text-2xl font-bold mt-12">0–3 months — Platform & Governance foundation</h2>
+        <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <article class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+            <div class="font-bold">Platform infrastructure</div>
+            <ul class="text-sm text-slate-700 mt-3 list-disc list-inside space-y-1">
+              <li>Baseline environments, DLP policies, access model</li>
+              <li>Monitoring & inventory (what exists, who owns it, cost/risk)</li>
+              <li>Standard ALM pipeline patterns</li>
+              <li>Hub-and-Spoke organizational structure setup</li>
+            </ul>
+          </article>
+          <article class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+            <div class="font-bold">GaC/CaC product v1</div>
+            <ul class="text-sm text-slate-700 mt-3 list-disc list-inside space-y-1">
+              <li>Pre-certified connectors/nodes (Golden Paths) for common use cases</li>
+              <li>Templates for approvals, audit trail, evidence automation</li>
+              <li>AI-powered compliance checking (RAG workflows for Golden Path validation)</li>
+              <li>Documentation + "how to ship safely fast" playbook</li>
+            </ul>
+          </article>
+          <article class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+            <div class="font-bold">Bronze enablement</div>
+            <ul class="text-sm text-slate-700 mt-3 list-disc list-inside space-y-1">
+              <li>Maker onboarding + guardrails (controlled self-service)</li>
+              <li>Sandbox rules to prevent "token burning" surprises</li>
+              <li>Office hours + community cadence</li>
+              <li>Champions program setup</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mt-12">4–9 months — Scale factory + launch retainers</h2>
+        <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <article class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+            <div class="font-bold">Factory capacity & labor arbitrage</div>
+            <ul class="text-sm text-slate-700 mt-3 list-disc list-inside space-y-1">
+              <li>Ramp offshore execution team (Pune/Hungary) for Silver delivery</li>
+              <li>Define roles: onshore architects/leads (Munich); offshore build/test</li>
+              <li>Establish 80/20 offshore/onshore mix for Silver tier</li>
+              <li>Quality gates: code review + automated compliance checks</li>
+            </ul>
+          </article>
+          <article class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+            <div class="font-bold">Economic model rollout</div>
+            <ul class="text-sm text-slate-700 mt-3 list-disc list-inside space-y-1">
+              <li><strong>Bronze:</strong> Retainer/subscription model (€250k per division × 4)</li>
+              <li><strong>Silver:</strong> Capacity blocks + small project pricing</li>
+              <li>Define SLAs for Bronze/Silver and escalation into Gold</li>
+              <li>Finance reporting: cost, consumption, value delivered</li>
+            </ul>
+          </article>
+          <article class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+            <div class="font-bold">Risk & value governance + backlog</div>
+            <ul class="text-sm text-slate-700 mt-3 list-disc list-inside space-y-1">
+              <li>Implement risk and value proportional governance workflow</li>
+              <li>Intake → Golden Path check → tiering (Bronze/Silver/Gold)</li>
+              <li>Launch public backlog for Silver/Gold projects with delivery estimates</li>
+              <li>Standard scoring: value, risk, complexity, reuse potential</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mt-12">10–18 months — Gold execution + margin capture</h2>
+        <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <article class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+            <div class="font-bold">Gold pipeline & SWAT teams</div>
+            <ul class="text-sm text-slate-700 mt-3 list-disc list-inside space-y-1">
+              <li>Identify 2–3 enterprise initiatives (cross-division, high-impact)</li>
+              <li>Hybrid SWAT teams (70/30 offshore/onshore) with premium governance</li>
+              <li>Outcome metrics: ROI, risk reduction, cycle-time improvements</li>
+              <li>Catalog lift: harvest reusable components from Gold projects</li>
+            </ul>
+          </article>
+          <article class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+            <div class="font-bold">GaC/CaC product v2 + Co-Existence</div>
+            <ul class="text-sm text-slate-700 mt-3 list-disc list-inside space-y-1">
+              <li>Expand Golden Paths to "hard" integrations and repeatable patterns</li>
+              <li>Make the compliant path increasingly self-service</li>
+              <li>Reduce manual review volume quarter over quarter</li>
+              <li>Implement Co-Existence Doctrine: Cap OutSystems, Grow Power Platform, Migrate Silver-class apps</li>
+            </ul>
+          </article>
+          <article class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+            <div class="font-bold">P&amp;L stabilization</div>
+            <ul class="text-sm text-slate-700 mt-3 list-disc list-inside space-y-1">
+              <li>Bronze retainers (€1M total) cover platform + steady-state ops</li>
+              <li>Offshore leverage (40–50% cost reduction) reduces cost base</li>
+              <li>Gold projects (2–3/year × €0.4M+ margin) deliver strategic impact</li>
+              <li>Target: €1M positive EBIT by Year 3</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mt-12">Financial projection: Break-even to Year 4</h2>
+        <p class="text-sm text-slate-600 mt-2">
+          EBIT progression aligned with roadmap phases: foundation investment → factory scale → margin capture. Break-even occurs around month 30 (Q10), approximately 12 months after the 18-month roadmap completes.
+        </p>
+
+        <div class="mt-4 bg-white rounded-xl shadow-sm border border-slate-200 p-5">
+          <div class="chart-container" style="position: relative; height: 400px;">
+            <canvas id="breakEvenChart" aria-label="Break-even and Year 3-4 EBIT projection chart" role="img"></canvas>
+          </div>
+        </div>
+
+        <div class="mt-4 bg-white rounded-xl shadow-sm border border-slate-200 p-5">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-3">
+              <div class="text-xs font-semibold text-slate-600">Break-even point</div>
+              <div id="breakEvenPoint" class="text-lg font-bold text-slate-800 mt-1">Month 30</div>
+              <div class="text-xs text-slate-500 mt-1">18-month roadmap + 12 months</div>
+            </div>
+            <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
+              <div class="text-xs font-semibold text-blue-600">Year 3 target</div>
+              <div id="year3EBIT" class="text-lg font-bold text-blue-800 mt-1">+€1.0M</div>
+              <div class="text-xs text-blue-600 mt-1">All levers operational</div>
+            </div>
+            <div class="bg-emerald-50 border border-emerald-200 rounded-lg p-3">
+              <div class="text-xs font-semibold text-emerald-600">Year 4 projection</div>
+              <div id="year4EBIT" class="text-lg font-bold text-emerald-800 mt-1">+€1.5M</div>
+              <div class="text-xs text-emerald-600 mt-1">Optimized operations</div>
+            </div>
+            <div class="bg-amber-50 border border-amber-200 rounded-lg p-3">
+              <div class="text-xs font-semibold text-amber-600">Cumulative positive EBIT</div>
+              <div id="cumulativeEBIT" class="text-lg font-bold text-amber-800 mt-1">+€7.4M</div>
+              <div class="text-xs text-amber-600 mt-1">Total positive value created (Y1–Y4)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mt-12">KPIs to report monthly</h2>
+        <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3">
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+            <div class="font-bold">Time-to-prod</div>
+            <div class="text-sm text-slate-500 mt-1">Bronze/Silver median lead time (target: 24h auto-approval for Golden Paths)</div>
+          </div>
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+            <div class="font-bold">Reuse rate</div>
+            <div class="text-sm text-slate-500 mt-1">% solutions using Golden Paths (target: 60%+ by Q4)</div>
+          </div>
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+            <div class="font-bold">Compliance</div>
+            <div class="text-sm text-slate-500 mt-1">% apps with clean DLP + audit trail (evidence automation)</div>
+          </div>
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+            <div class="font-bold">Unit cost</div>
+            <div class="text-sm text-slate-500 mt-1">€ per delivered automation (Silver, target: 40–50% reduction via offshore)</div>
+          </div>
+        </div>
+        <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3">
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+            <div class="font-bold">Bronze adoption</div>
+            <div class="text-sm text-slate-500 mt-1">Active makers, retainer coverage (target: 4 divisions)</div>
+          </div>
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+            <div class="font-bold">Silver backlog</div>
+            <div class="text-sm text-slate-500 mt-1">Public backlog visibility, delivery estimates accuracy</div>
+          </div>
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+            <div class="font-bold">Gold margin</div>
+            <div class="text-sm text-slate-500 mt-1">Projects/year, margin per project (target: 2–3 projects, €0.4M+ margin each)</div>
+          </div>
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
+            <div class="font-bold">EBIT bridge</div>
+            <div class="text-sm text-slate-500 mt-1">Year-3 projection: Baseline + Bronze + Silver + Gold - Platform cost</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="max-w-6xl mx-auto px-4 py-10">
+      <div class="h-px bg-slate-200"></div>
+      <p class="text-sm text-slate-500 mt-4">
+        Next: see <a class="text-blue-600 hover:underline" href="fit.html">Personal Fit</a> to connect the model to delivery experience and leadership.
+      </p>
+    </footer>
+
+    <script>
+      // Break-even and 4-year projection chart
+      (function() {
+        const ctx = document.getElementById("breakEvenChart");
+        if (!ctx) return;
+
+        // Data points: quarterly EBIT progression over 4 years (16 quarters)
+        // Aligned with roadmap phases:
+        // Q1-Q3 (0-9 months): Foundation investment, negative EBIT
+        // Q4-Q6 (9-18 months): Factory scaling, retainers launch, approaching break-even
+        // Q7-Q9 (18-27 months): Gold execution, margin capture begins
+        // Q10-Q12 (27-36 months): Break-even at Q10, Year 3 reaching €1M target
+        // Q13-Q16 (36-48 months): Year 4, optimized operations, €1.5M+
+        const quarters = Array.from({ length: 16 }, (_, i) => `Q${i + 1}`);
+        const ebitData = [
+          -1.7,  // Q1: Baseline (foundation investment)
+          -1.6,  // Q2: Platform infrastructure setup
+          -1.5,  // Q3: GaC/CaC v1, Bronze enablement
+          -1.3,  // Q4: Factory capacity ramp, retainers start
+          -1.0,  // Q5: Economic model rollout, Silver scaling
+          -0.6,  // Q6: Risk governance, backlog launch
+          -0.3,  // Q7: Gold pipeline starts, margin capture begins
+          -0.15, // Q8: Approaching break-even
+          -0.05, // Q9: Close to break-even
+          0.0,   // Q10: Break-even (month 30)
+          0.3,   // Q11: Positive EBIT, Gold projects delivering
+          0.6,   // Q12: GaC/CaC v2, Co-Existence, optimization
+          1.0,   // Q13: Year 3 target reached
+          1.2,   // Q14: Year 4, continued growth
+          1.35,  // Q15: Optimized operations
+          1.5    // Q16: Year 4 target
+        ];
+
+        // Find break-even point (first quarter where EBIT >= 0)
+        const breakEvenIndex = ebitData.findIndex(v => v >= 0);
+        const breakEvenQuarter = breakEvenIndex >= 0 ? quarters[breakEvenIndex] : "Q10";
+        const breakEvenMonth = (breakEvenIndex + 1) * 3;
+
+        // Update break-even display
+        const breakEvenPointEl = document.getElementById("breakEvenPoint");
+        if (breakEvenPointEl) {
+          breakEvenPointEl.textContent = `Month ${breakEvenMonth}`;
+        }
+
+        // Update summary displays
+        const year3EBITEl = document.getElementById("year3EBIT");
+        if (year3EBITEl) {
+          year3EBITEl.textContent = `+€${ebitData[12].toFixed(1)}M`;
+        }
+
+        const year4EBITEl = document.getElementById("year4EBIT");
+        if (year4EBITEl) {
+          year4EBITEl.textContent = `+€${ebitData[15].toFixed(1)}M`;
+        }
+
+        // Calculate cumulative value creation: sum of all positive EBIT quarters (value created after break-even)
+        const positiveEBITSum = ebitData.filter(v => v > 0).reduce((sum, val) => sum + val, 0);
+        const cumulativeEBITEl = document.getElementById("cumulativeEBIT");
+        if (cumulativeEBITEl) {
+          cumulativeEBITEl.textContent = `+€${positiveEBITSum.toFixed(1)}M`;
+        }
+
+        new Chart(ctx, {
+          type: "line",
+          data: {
+            labels: quarters,
+            datasets: [
+              {
+                label: "EBIT (M€)",
+                data: ebitData,
+                borderColor: "#3b82f6",
+                backgroundColor: "rgba(59, 130, 246, 0.1)",
+                borderWidth: 3,
+                fill: true,
+                tension: 0.4,
+                pointRadius: function(context) {
+                  const index = context.dataIndex;
+                  // Highlight break-even, Year 3, and Year 4 points
+                  if (index === breakEvenIndex || index === 12 || index === 15) {
+                    return 8;
+                  }
+                  return 4;
+                },
+                pointHoverRadius: 8,
+                pointBackgroundColor: function(context) {
+                  const index = context.dataIndex;
+                  // Color break-even point green, Year 3/4 blue/green
+                  if (index === breakEvenIndex) return "#10b981";
+                  if (index === 11) return "#3b82f6";
+                  if (index === 15) return "#10b981";
+                  return "#3b82f6";
+                },
+                pointStyle: function(context) {
+                  const index = context.dataIndex;
+                  // Make break-even point a circle, others default
+                  if (index === breakEvenIndex) return "circle";
+                  return "circle";
+                },
+                pointBorderColor: "#ffffff",
+                pointBorderWidth: 2
+              },
+              {
+                label: "Break-even (0)",
+                data: Array(16).fill(0),
+                borderColor: "#64748b",
+                borderWidth: 2,
+                borderDash: [8, 4],
+                pointRadius: 0,
+                pointHoverRadius: 0,
+                fill: false,
+                order: 0 // Draw break-even line behind the main line
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                display: true,
+                position: "top",
+                labels: {
+                  usePointStyle: true,
+                  padding: 15,
+                  font: {
+                    size: 12
+                  }
+                }
+              },
+              tooltip: {
+                callbacks: {
+                  label: function(context) {
+                    const value = context.parsed.y;
+                    const sign = value >= 0 ? "+" : "";
+                    const index = context.dataIndex;
+                    let label = `EBIT: ${sign}€${value.toFixed(2)}M`;
+                    // Add milestone labels
+                    if (index === breakEvenIndex) {
+                      label += " (Break-even)";
+                    } else if (index === 12) {
+                      label += " (Year 3 target)";
+                    } else if (index === 15) {
+                      label += " (Year 4 target)";
+                    }
+                    return label;
+                  }
+                }
+              },
+            },
+            scales: {
+              x: {
+                title: {
+                  display: true,
+                  text: "Quarter (4-year timeline)",
+                  font: {
+                    size: 12,
+                    weight: "bold"
+                  }
+                },
+                grid: {
+                  color: "rgba(148, 163, 184, 0.1)"
+                }
+              },
+              y: {
+                title: {
+                  display: true,
+                  text: "EBIT (M€)",
+                  font: {
+                    size: 12,
+                    weight: "bold"
+                  }
+                },
+                min: -2.0,
+                max: 2.0,
+                ticks: {
+                  callback: function(value) {
+                    return value >= 0 ? `+€${value.toFixed(1)}M` : `€${value.toFixed(1)}M`;
+                  }
+                },
+                grid: {
+                  color: "rgba(148, 163, 184, 0.1)"
+                }
+              }
+            }
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
+
+

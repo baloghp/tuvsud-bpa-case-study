@@ -1,0 +1,932 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Digital Trust Factory — Strategy</title>
+    <meta name="description" content="Strategy: three levers (retainers, offshore factory, gold projects) and the financial bridge." />
+    <meta name="color-scheme" content="light" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif; }
+    </style>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="assets/js/site.js" defer></script>
+  </head>
+  <body class="bg-slate-50 text-slate-800">
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:justify-between md:h-16 md:items-center py-3 md:py-0 gap-2">
+          <div class="flex items-center gap-3">
+            <span class="text-xl font-bold text-blue-600">TÜV SÜD</span>
+            <span class="text-slate-400">|</span>
+            <span class="text-slate-600 font-medium">Digital Trust Factory</span>
+          </div>
+          <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
+            <a data-nav href="index.html" class="text-slate-600 hover:text-blue-600">Summary</a>
+            <a data-nav href="tuv-context.html" class="text-slate-600 hover:text-blue-600">TÜV Context</a>
+            <a data-nav href="strategy.html" class="text-slate-600 hover:text-blue-600">Strategy</a>
+            <a data-nav href="operating-model.html" class="text-slate-600 hover:text-blue-600">Operating Model</a>
+            <a data-nav href="roadmap.html" class="text-slate-600 hover:text-blue-600">Roadmap</a>
+            <a data-nav href="fit.html" class="text-slate-600 hover:text-blue-600">Personal Fit</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 py-10">
+      <header class="bg-gradient-to-r from-blue-700 to-cyan-600 text-white rounded-2xl px-6 py-10 shadow-sm">
+        <h1 class="text-3xl md:text-4xl font-bold">Strategy</h1>
+        <p class="mt-2 text-white/90 max-w-2xl">
+          Tiered service model with three economic levers to fix the P&amp;L.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <span class="bg-white/20 backdrop-blur px-3 py-1.5 rounded-full border border-white/30 text-sm font-semibold">Retainer</span>
+          <span class="bg-white/20 backdrop-blur px-3 py-1.5 rounded-full border border-white/30 text-sm font-semibold">Factory</span>
+          <span class="bg-white/20 backdrop-blur px-3 py-1.5 rounded-full border border-white/30 text-sm font-semibold">Gold</span>
+        </div>
+      </header>
+
+      <section>
+        <h2 class="text-2xl font-bold mt-12">Strategy synthesis</h2>
+        <p class="text-sm text-slate-600 mt-2">
+          Click a standard model to see its strengths and failure modes. The chosen solution synthesizes the best elements.
+        </p>
+
+        <div class="mt-4 bg-white rounded-xl shadow-sm border border-slate-200 p-5">
+
+          <div class="mt-4 grid grid-cols-1 lg:grid-cols-12 gap-4">
+            <!-- 1) Main stage: the synthesized solution -->
+            <div class="lg:col-span-6 bg-gradient-to-br from-blue-50 to-white border border-blue-200 rounded-lg p-5 border-l-4 border-blue-600">
+              <div class="text-sm font-semibold text-slate-700">Chosen solution</div>
+              <div class="mt-2">
+                <div class="text-xl font-bold">Certified Factory (Tiered Managed Services)</div>
+                <p class="text-sm text-slate-700 mt-2">
+                  Keep the <strong>tiered service layer</strong> (Bronze/Silver/Gold) to scale adoption safely, and apply <strong>different business models</strong> per tier to fix the economics.
+                </p>
+                <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-3">
+                  <div class="bg-stone-50 border border-stone-200 rounded-lg p-3">
+                    <div class="font-semibold text-stone-800">Bronze</div>
+                    <div class="text-sm text-slate-600 mt-1">Enablement + guardrails (controlled self‑service). </div>
+                  </div>
+                  <div class="bg-slate-50 border border-slate-200 rounded-lg p-3">
+                    <div class="font-semibold text-slate-800">Silver</div>
+                    <div class="text-sm text-slate-600 mt-1">Smaller custom components/projects. Client leads; we provide compliant expertise + reusable nodes.</div>
+                  </div>
+                  <div class="bg-amber-50 border border-amber-200 rounded-lg p-3">
+                    <div class="font-semibold text-amber-800">Gold</div>
+                    <div class="text-sm text-slate-600 mt-1">SWAT teams for “big fish” projects. Premium governance + margin.</div>
+                  </div>
+                </div>
+
+
+                <div class="mt-4 bg-white border border-slate-200 rounded-lg p-4">
+                  <div class="flex flex-wrap items-center justify-between gap-2">
+                    <div class="text-sm font-semibold text-slate-700">Compliance by design</div>
+                    <span class="text-xs font-bold px-2 py-1 rounded bg-blue-100 text-blue-800">GaC/CaC</span>
+                  </div>
+                  <p class="text-sm text-slate-700 mt-2">
+                    Pre‑certified building blocks make the <strong>fastest path the compliant path</strong>.
+                  </p>
+                  <a class="text-sm font-semibold text-blue-700 hover:underline" href="#platform-product">
+                    See platform product ↓
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2) Buttons: standard models -->
+            <div class="lg:col-span-3 bg-white border border-slate-200 rounded-lg p-4">
+              <div class="text-sm font-semibold text-slate-700">Standard models (for comparison)</div>
+              <div class="mt-3 grid grid-cols-1 gap-2">
+                <button type="button" class="interactive-card border border-slate-200 bg-white rounded-lg p-4 text-left" data-model="hub_spoke">
+                  <div class="flex items-start justify-between gap-3">
+                    <div>
+                      <div class="font-bold">CoE </div>
+                      <div class="text-sm text-slate-600 mt-1">CoE (Control Tower) + local delivery.</div>
+                    </div>
+                    <span class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-700">Structure</span>
+                  </div>
+                </button>
+                <button type="button" class="interactive-card border border-slate-200 bg-white rounded-lg p-4 text-left" data-model="vc_franchise">
+                  <div class="flex items-start justify-between gap-3">
+                    <div>
+                      <div class="font-bold">VC / Franchise</div>
+                      <div class="text-sm text-slate-600 mt-1">Value share / retainer economics.</div>
+                    </div>
+                    <span class="text-xs font-bold px-2 py-1 rounded bg-emerald-100 text-emerald-800">Economics</span>
+                  </div>
+                </button>
+                <button type="button" class="interactive-card border border-slate-200 bg-white rounded-lg p-4 text-left" data-model="industrial_partner">
+                  <div class="flex items-start justify-between gap-3">
+                    <div>
+                      <div class="font-bold">Industrialized Partner</div>
+                      <div class="text-sm text-slate-600 mt-1">Factory model + reliability.</div>
+                    </div>
+                    <span class="text-xs font-bold px-2 py-1 rounded bg-blue-100 text-blue-800">Fit</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <!-- 3) Details: selected standard model -->
+            <div class="lg:col-span-3 bg-white border border-slate-200 rounded-lg p-4">
+              <div class="text-sm text-slate-500">Selected model details</div>
+              <div id="modelTitle" class="text-lg font-bold mt-1">Hub &amp; Spoke (Consultant)</div>
+              <div id="modelDesc" class="text-sm text-slate-700 mt-2"></div>
+
+              <div class="mt-3">
+                <div class="text-sm font-semibold text-slate-700">Pros</div>
+                <ul id="modelPros" class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1"></ul>
+              </div>
+              <div class="mt-4">
+                <div class="text-sm font-semibold text-slate-700">Cons (TÜV reality)</div>
+                <ul id="modelCons" class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="platform-product" class="mt-6 bg-white rounded-xl shadow-sm border border-slate-200 p-5 border-l-4 border-blue-600">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <h3 class="text-xl font-bold text-slate-800">Platform product: Governance‑as‑Code / Compliance‑as‑Code</h3>
+            <span class="text-xs font-bold px-2 py-1 rounded bg-blue-100 text-blue-800">Reusable kit</span>
+          </div>
+          <p class="text-sm text-slate-600 mt-2">
+            Certified building blocks and AI‑aided checks that produce audit‑ready outputs without slowing delivery.
+          </p>
+          <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+              <div class="text-sm font-semibold text-slate-700">Core kit</div>
+              <ul class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1">
+                <li><strong>Certified connectors/nodes:</strong> golden paths for SAP/Dataverse/SharePoint patterns</li>
+                <li><strong>Guardrails:</strong> DLP packs, environment routing, naming/metadata standards</li>
+                <li><strong>Logging &amp; evidence:</strong> standard telemetry + audit trail templates</li>
+                <li><strong>Reusable components:</strong> approvals, exception handling, IDP patterns</li>
+                <li><strong>Evidence automation:</strong> evidence packs from logs/controls (human sign-off)</li>
+              </ul>
+            </div>
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+              <div class="text-sm font-semibold text-slate-700">AI‑aided monitoring &amp; checking (decision support)</div>
+              <p class="text-sm text-slate-600 mt-1">
+                AI supports monitoring and recommendations with an evidence trail (not auto‑approval).
+              </p>
+              <ul class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1">
+                <li><strong>Predictive compliance signals:</strong> early warning on risky patterns (connectors, data flows, token burn)</li>
+                <li><strong>Process conformance checks:</strong> compare event logs to approved “happy paths”; flag deviations</li>
+                <li><strong>Policy Q&amp;A assistant:</strong> “what’s allowed?” grounded in approved controls and DLP rules</li>
+                <li><strong>AI drift monitoring:</strong> detect behavior drift and trigger re‑review/re‑certification</li>
+                <li><strong>HOL / HIL / HIC analysis:</strong> define where AI can act vs. where humans must approve/control</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <section class="mt-10">
+          <h3 class="text-xl font-bold text-slate-800">Layer-by-layer strategy &amp; economics</h3>
+          <p class="text-sm text-slate-600 mt-2">
+            Each tier uses the platform product differently, with distinct economics and P&amp;L levers.
+          </p>
+
+          <div class="mt-4 grid grid-cols-1 lg:grid-cols-3 gap-4">
+            <article class="bg-stone-50 border border-stone-200 rounded-xl p-5 shadow-sm">
+              <div class="flex items-center justify-between gap-3">
+                <div class="text-lg font-bold text-stone-700">Bronze</div>
+                <span class="text-xs font-bold px-2 py-1 rounded bg-stone-100 text-stone-800">Enablement</span>
+              </div>
+              <p class="text-sm text-slate-600 mt-2">
+                Controlled self‑service for small operational tweaks with strict guardrails. Goal: scale adoption without creating a review bottleneck while protecting larger systems.
+              </p>
+
+              <div class="mt-4">
+                <div class="text-sm font-semibold text-slate-700">How it uses GaC/CaC</div>
+                <ul class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1">
+                  <li>Use only <strong>certified nodes</strong> + templates; auto‑evidence and telemetry are on by default</li>
+                  <li>Sandbox environment; promotion triggers evidence + routing rules</li>
+                </ul>
+              </div>
+
+              <div class="mt-4">
+                <div class="text-sm font-semibold text-slate-700">Economic model</div>
+                <ul class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1">
+                  <li><strong>Retainer/subscription:</strong> platform access + enablement + sandbox (€250k illustrative per division)</li>
+                  <li><strong>Consumption budgeting:</strong> premium connectors + AI tokens gated behind value</li>
+                  <li><strong>Predictable chargeback:</strong> replaces ticket-by-ticket billing</li>
+                </ul>
+              </div>
+
+              <div class="mt-4 bg-white/70 border border-stone-200 rounded-lg p-3">
+                <div class="text-sm font-semibold text-stone-900">Primary P&amp;L dial</div>
+                <div class="text-sm text-slate-600 mt-1">
+                  <strong>Governance strictness / routing</strong> (what is auto‑approved vs. escalated) + <strong>token budgets</strong>.
+                </div>
+              </div>
+            </article>
+
+            <article class="bg-slate-50 border border-slate-200 rounded-xl p-5 shadow-sm">
+              <div class="flex items-center justify-between gap-3">
+                <div class="text-lg font-bold text-slate-700">Silver</div>
+                <span class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-700">Factory</span>
+              </div>
+              <p class="text-sm text-slate-600 mt-2">
+                Smaller custom components and projects. Business leads; T-Tech provides expertise, compliant building blocks, and factory capacity.
+              </p>
+
+              <div class="mt-4">
+                <div class="text-sm font-semibold text-slate-700">How it uses GaC/CaC</div>
+                <ul class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1">
+                  <li>Client-side builders assemble solutions using <strong>golden paths</strong> and <strong>standard logging/evidence</strong></li>
+                  <li>T-Tech delivers <strong>custom compliant components</strong> (special nodes/connectors) when needed</li>
+                  <li>Reusable outputs graduate into new <strong>certified nodes</strong> (catalog grows)</li>
+                </ul>
+              </div>
+
+              <div class="mt-4">
+                <div class="text-sm font-semibold text-slate-700">Hybrid‑shore delivery</div>
+                <ul class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1">
+                  <li><strong>Offshore:</strong> build/test, refactoring, documentation, standard workflows</li>
+                  <li><strong>Onshore:</strong> architecture, stakeholder management, risk/security alignment</li>
+                  <li><strong>Quality gates:</strong> Golden Paths + review + automated compliance evidence</li>
+                </ul>
+              </div>
+
+              <div class="mt-4">
+                <div class="text-sm font-semibold text-slate-700">Economic model</div>
+                <ul class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1">
+                  <li><strong>Capacity blocks</strong> (retainer‑like) for predictable expert support + delivery bandwidth</li>
+                  <li><strong>Small projects:</strong> custom components and smaller project pricing (T&amp;M / fixed “small package”)</li>
+                  <li><strong>Packaged components:</strong> priced add-ons for specialized compliant nodes (reusable accelerators)</li>
+                </ul>
+              </div>
+
+              <div class="mt-4 bg-white/70 border border-slate-200 rounded-lg p-3">
+                <div class="text-sm font-semibold text-slate-700">Primary P&amp;L dial</div>
+                <div class="text-sm text-slate-600 mt-1">
+                  <strong>Shore mix</strong> (onshore/offshore ratio) + standardization (reuse rate).
+                </div>
+              </div>
+            </article>
+
+            <article class="bg-amber-50 border border-amber-200 rounded-xl p-5 shadow-sm">
+              <div class="flex items-center justify-between gap-3">
+                <div class="text-lg font-bold text-amber-700">Gold</div>
+                <span class="text-xs font-bold px-2 py-1 rounded bg-amber-100 text-amber-800">SWAT</span>
+              </div>
+              <p class="text-sm text-slate-600 mt-2">
+                High‑impact “big fish” programs (cross‑divisional / high‑risk). Goal: measurable ROI + internal margin.
+              </p>
+
+              <div class="mt-4">
+                <div class="text-sm font-semibold text-slate-700">How it uses GaC/CaC</div>
+                <ul class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1">
+                  <li>Use the catalog as a baseline; add premium controls (security sign‑off, pen test, SoD)</li>
+                  <li>Harvest generic pieces into new certified building blocks (factory gets stronger)</li>
+                </ul>
+              </div>
+
+              <div class="mt-4">
+                <div class="text-sm font-semibold text-slate-700">What makes something “Gold”</div>
+                <ul class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1">
+                  <li><strong>High impact:</strong> cross‑divisional or mission‑critical outcomes</li>
+                  <li><strong>High compliance:</strong> security sign‑off + audit evidence is non‑negotiable</li>
+                  <li><strong>Measured as ROI/risk:</strong> not tickets closed</li>
+                </ul>
+              </div>
+
+              <div class="mt-4">
+                <div class="text-sm font-semibold text-slate-700">Economic model</div>
+                <ul class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1">
+                  <li><strong>Project pricing:</strong> cost‑plus / fixed‑price with SLA add‑on</li>
+                  <li><strong>Margin capture:</strong> pay for premium governance + delivery certainty</li>
+                </ul>
+              </div>
+
+              <div class="mt-4 bg-white/70 border border-amber-200 rounded-lg p-3">
+                <div class="text-sm font-semibold text-amber-900">Primary P&amp;L dial</div>
+                <div class="text-sm text-slate-600 mt-1">
+                  <strong>Project selection &amp; pricing</strong> (margin target) + how much reusable “catalog lift” you harvest per engagement.
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mt-12">Strategic simulator</h2>
+        <p class="text-sm text-slate-600 mt-2">
+          Interactive model showing how Bronze/Silver/Gold levers plus platform costs combine into Year‑3 EBIT.
+        </p>
+
+        <!-- Collapsible Controls -->
+        <div class="mt-4 bg-white rounded-xl shadow-sm border border-slate-200">
+          <button
+            id="controlsToggle"
+            class="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-slate-50 transition-colors rounded-t-xl"
+            aria-expanded="false"
+            aria-controls="controlsContent"
+          >
+            <span class="text-sm font-semibold text-slate-700">Controls</span>
+            <svg
+              id="controlsChevron"
+              class="w-5 h-5 text-slate-500 transition-transform duration-200 rotate-180"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id="controlsContent" class="px-5 pb-5 hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <!-- Row 1: Bronze -->
+          <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
+            <div class="bg-stone-50 border border-stone-200 rounded-lg p-3">
+              <div class="flex items-center justify-between">
+                <div class="font-bold text-stone-800">Bronze</div>
+                <span id="bronzeContribution" class="text-xs font-bold px-2 py-1 rounded bg-stone-100 text-stone-800">+€0.0M</span>
+              </div>
+              <label for="bronzeRetainer" class="block text-sm text-slate-600 mt-2">Bronze retainer / subscription (per division, M€)</label>
+              <input id="bronzeRetainer" type="range" min="0.10" max="0.50" step="0.05" value="0.25" class="w-full mt-2" />
+              <div class="text-xs text-slate-500 mt-1">
+                Per division: <span id="bronzeRetainerValue" class="font-semibold text-slate-700">€0.25M</span> ·
+                Total (x4): <span id="bronzeRetainerTotalValue" class="font-semibold text-slate-700">€1.00M</span>
+              </div>
+
+              <label for="bronzeGov" class="block text-sm text-slate-600 mt-2">Governance routing strictness</label>
+              <input id="bronzeGov" type="range" min="0" max="100" value="80" class="w-full mt-2" />
+              <div class="text-xs text-slate-500 mt-1">Auto-approval via Golden Paths: <span id="bronzeGovValue" class="font-semibold text-slate-700">80%</span></div>
+
+              <label for="bronzeToken" class="block text-sm text-slate-600 mt-3">Token / premium usage discipline</label>
+              <input id="bronzeToken" type="range" min="0" max="100" value="70" class="w-full mt-2" />
+              <div class="text-xs text-slate-500 mt-1">Budget &amp; gating: <span id="bronzeTokenValue" class="font-semibold text-slate-700">70%</span></div>
+
+              <pre class="mt-3 bg-white/70 border border-stone-200 rounded-md p-2 overflow-auto text-xs"><code id="bronzeFormula">Bronze = ...</code></pre>
+            </div>
+          </div>
+
+          <!-- Row 1: Silver -->
+          <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-3">
+              <div class="flex items-center justify-between">
+                <div class="font-bold text-slate-800">Silver</div>
+                <span id="silverContribution" class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-700">+€0.0M</span>
+              </div>
+              <label for="silverPricing" class="block text-sm text-slate-600 mt-2">Small project / component pricing (M€)</label>
+              <input id="silverPricing" type="range" min="0.00" max="1.20" step="0.05" value="0.40" class="w-full mt-2" />
+              <div class="text-xs text-slate-500 mt-1">Pricing: <span id="silverPricingValue" class="font-semibold text-slate-700">€0.40M</span></div>
+
+              <label for="silverOffshore" class="block text-sm text-slate-600 mt-2">Factory offshore ratio</label>
+              <input id="silverOffshore" type="range" min="0" max="100" value="80" class="w-full mt-2" />
+              <div class="text-xs text-slate-500 mt-1">Shore mix: <span id="silverOffshoreValue" class="font-semibold text-slate-700">80%</span></div>
+
+              <label for="silverReuse" class="block text-sm text-slate-600 mt-3">Reuse rate</label>
+              <input id="silverReuse" type="range" min="0" max="100" value="60" class="w-full mt-2" />
+              <div class="text-xs text-slate-500 mt-1">Catalog reuse: <span id="silverReuseValue" class="font-semibold text-slate-700">60%</span></div>
+
+              <pre class="mt-3 bg-white/70 border border-slate-200 rounded-md p-2 overflow-auto text-xs"><code id="silverFormula">Silver = ...</code></pre>
+            </div>
+          </div>
+
+          <!-- Row 2: Gold -->
+          <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
+            <div class="bg-amber-50 border border-amber-200 rounded-lg p-3">
+              <div class="flex items-center justify-between">
+                <div class="font-bold text-amber-800">Gold</div>
+                <span id="goldContribution" class="text-xs font-bold px-2 py-1 rounded bg-amber-100 text-amber-800">+€0.0M</span>
+              </div>
+              <label for="goldProjects" class="block text-sm text-slate-600 mt-2">Gold projects / year</label>
+              <input id="goldProjects" type="range" min="0" max="3" step="1" value="2" class="w-full mt-2" />
+              <div class="text-xs text-slate-500 mt-1">Volume: <span id="goldProjectsValue" class="font-semibold text-slate-700">2</span></div>
+
+              <label for="goldMargin" class="block text-sm text-slate-600 mt-3">Margin per Gold project (M€)</label>
+              <input id="goldMargin" type="range" min="0.3" max="0.9" step="0.05" value="0.65" class="w-full mt-2" />
+              <div class="text-xs text-slate-500 mt-1">Margin: <span id="goldMarginValue" class="font-semibold text-slate-700">0.65</span> M€</div>
+
+              <label for="goldCatalogLift" class="block text-sm text-slate-600 mt-3">Catalog lift capture</label>
+              <input id="goldCatalogLift" type="range" min="0" max="100" value="60" class="w-full mt-2" />
+              <div class="text-xs text-slate-500 mt-1">Reusable gains harvested: <span id="goldCatalogLiftValue" class="font-semibold text-slate-700">60%</span></div>
+
+              <pre class="mt-3 bg-white/70 border border-amber-200 rounded-md p-2 overflow-auto text-xs"><code id="goldFormula">Gold = ...</code></pre>
+            </div>
+          </div>
+
+          <!-- Row 2: Platform cost -->
+          <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
+            <div class="bg-white border border-slate-200 rounded-lg p-3">
+              <div class="flex items-center justify-between">
+                <div class="font-bold text-slate-800">GaC/CaC platform cost</div>
+                <span id="platformCostValue" class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-700">€1.00M</span>
+              </div>
+              <label for="opsRun" class="block text-sm text-slate-600 mt-2">Run &amp; ops (M€)</label>
+              <input id="opsRun" type="range" min="0.20" max="1.20" step="0.05" value="0.60" class="w-full mt-2" />
+              <div class="text-xs text-slate-500 mt-1">Run: <span id="opsRunValue" class="font-semibold text-slate-700">€0.60M</span></div>
+
+              <label for="opsDev" class="block text-sm text-slate-600 mt-3">Build &amp; evolve (GaC/CaC dev) (M€)</label>
+              <input id="opsDev" type="range" min="0.10" max="1.50" step="0.05" value="0.40" class="w-full mt-2" />
+              <div class="text-xs text-slate-500 mt-1">Dev: <span id="opsDevValue" class="font-semibold text-slate-700">€0.40M</span></div>
+
+              <label for="baselineAbsorb" class="block text-sm text-slate-600 mt-3">Baseline absorbs platform cost</label>
+              <input id="baselineAbsorb" type="range" min="0" max="100" value="40" class="w-full mt-2" />
+              <div class="text-xs text-slate-500 mt-1">
+                Absorbed: <span id="absorbedValue" class="font-semibold text-slate-700">€0.40M</span> · Remaining: <span id="remainingOpsValue" class="font-semibold text-slate-700">€0.60M</span>
+              </div>
+
+              <pre class="mt-3 bg-slate-50 border border-slate-200 rounded-md p-2 overflow-auto text-xs"><code id="opsFormula">Platform = ...</code></pre>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- Chart below controls -->
+        <div class="mt-4 bg-white rounded-xl shadow-sm border border-slate-200 p-5">
+          <div class="chart-container">
+            <canvas id="multiLeverChart" aria-label="Multi-lever EBIT bridge chart" role="img"></canvas>
+          </div>
+        </div>
+
+        <!-- Summary below chart -->
+        <div class="mt-4 bg-white rounded-xl shadow-sm border border-slate-200 p-5">
+          <div class="flex justify-between items-center bg-slate-50 border border-slate-200 rounded-lg px-3 py-2">
+            <span class="text-sm text-slate-600">Projected EBIT (Year 3)</span>
+            <span id="ebitValue" class="font-bold text-emerald-600">+€1.0M</span>
+          </div>
+          <pre class="mt-2 bg-slate-900 text-slate-100 rounded-lg px-3 py-2 overflow-auto text-xs"><code id="overallFormula">EBIT = ...</code></pre>
+          <div class="mt-4">
+            <span id="statusPill" class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-100 text-emerald-800">TARGET</span>
+            <p class="text-sm text-slate-500 mt-2">
+              Guardrail: AI is decision-support (HOL/HIL/HIC). Compliance is baked into the catalog, not done by late-stage manual review.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Divider -->
+      <div class="max-w-6xl mx-auto px-4 mt-12 mb-8">
+        <div class="h-px bg-slate-300"></div>
+      </div>
+
+      <!-- Technology strategy: The Co‑Existence Doctrine -->
+      <section class="max-w-6xl mx-auto px-4">
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 border-l-4 border-slate-700">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <h3 class="text-xl font-bold text-slate-800">Technology strategy: Co‑Existence Doctrine</h3>
+            <span class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-700">OutSystems + Power Platform</span>
+          </div>
+          <p class="text-sm text-slate-600 mt-2">
+            Protect existing heavy apps on OutSystems; make Power Platform the default for new internal automation.
+          </p>
+
+          <div class="mt-4 grid grid-cols-1 lg:grid-cols-3 gap-3">
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+              <div class="text-sm font-semibold text-slate-700">Rule 1 — Cap</div>
+              <p class="text-sm text-slate-600 mt-1">
+                <strong>No new internal apps</strong> on OutSystems unless a strict exception is granted.
+              </p>
+              <ul class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1">
+                <li>Stops portfolio sprawl</li>
+                <li>Forces reuse via GaC/CaC + Golden Paths</li>
+              </ul>
+            </div>
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+              <div class="text-sm font-semibold text-slate-700">Rule 2 — Grow</div>
+              <p class="text-sm text-slate-600 mt-1">
+                <strong>All new internal automations</strong> default to Power Platform (flows, apps, approvals).
+              </p>
+              <ul class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1">
+                <li>Leverages existing M365 investment</li>
+                <li>Governed speed via GaC/CaC (compliance by design)</li>
+              </ul>
+            </div>
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+              <div class="text-sm font-semibold text-slate-700">Rule 3 — Migrate</div>
+              <p class="text-sm text-slate-600 mt-1">
+                Systematically migrate <strong>"Silver" class</strong> apps that are over‑engineered on OutSystems.
+              </p>
+              <ul class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1">
+                <li>Reduces licensing/maintenance cost</li>
+                <li>Creates reusable components for the GaC/CaC catalog</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div class="bg-white border border-slate-200 rounded-lg p-4">
+              <div class="text-sm font-semibold text-slate-700">When to use what</div>
+              <ul class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1">
+                <li><strong>OutSystems:</strong> existing "heavy" apps and complex external-facing portals</li>
+                <li><strong>Power Platform:</strong> default for internal process automation (Bronze/Silver/Gold by risk)</li>
+              </ul>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-lg p-4">
+              <div class="text-sm font-semibold text-slate-700">Benefits</div>
+              <ul class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1">
+                <li><strong>Finance:</strong> cost reduction without destabilizing production</li>
+                <li><strong>Speed:</strong> clear default platform + certified building blocks</li>
+                <li><strong>Governance:</strong> less exception handling, more "compliance by design"</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="max-w-6xl mx-auto px-4 py-10">
+      <div class="h-px bg-slate-200"></div>
+      <p class="text-sm text-slate-500 mt-4">Next: see the <a class="text-blue-600 hover:underline" href="operating-model.html">Operating Model</a> for how this runs day-to-day.</p>
+    </footer>
+
+    <script>
+      const baseline = -1.7; // M€
+
+      const bronzeRetainer = /** @type {HTMLInputElement} */ (document.getElementById("bronzeRetainer"));
+      const bronzeGov = /** @type {HTMLInputElement} */ (document.getElementById("bronzeGov"));
+      const bronzeToken = /** @type {HTMLInputElement} */ (document.getElementById("bronzeToken"));
+      const silverPricing = /** @type {HTMLInputElement} */ (document.getElementById("silverPricing"));
+      const silverOffshore = /** @type {HTMLInputElement} */ (document.getElementById("silverOffshore"));
+      const silverReuse = /** @type {HTMLInputElement} */ (document.getElementById("silverReuse"));
+      const goldProjects = /** @type {HTMLInputElement} */ (document.getElementById("goldProjects"));
+      const goldMargin = /** @type {HTMLInputElement} */ (document.getElementById("goldMargin"));
+      const goldCatalogLift = /** @type {HTMLInputElement} */ (document.getElementById("goldCatalogLift"));
+      const opsRun = /** @type {HTMLInputElement} */ (document.getElementById("opsRun"));
+      const opsDev = /** @type {HTMLInputElement} */ (document.getElementById("opsDev"));
+      const baselineAbsorb = /** @type {HTMLInputElement} */ (document.getElementById("baselineAbsorb"));
+
+      const bronzeRetainerValue = /** @type {HTMLElement} */ (document.getElementById("bronzeRetainerValue"));
+      const bronzeRetainerTotalValue = /** @type {HTMLElement} */ (document.getElementById("bronzeRetainerTotalValue"));
+      const bronzeGovValue = /** @type {HTMLElement} */ (document.getElementById("bronzeGovValue"));
+      const bronzeTokenValue = /** @type {HTMLElement} */ (document.getElementById("bronzeTokenValue"));
+      const silverPricingValue = /** @type {HTMLElement} */ (document.getElementById("silverPricingValue"));
+      const silverOffshoreValue = /** @type {HTMLElement} */ (document.getElementById("silverOffshoreValue"));
+      const silverReuseValue = /** @type {HTMLElement} */ (document.getElementById("silverReuseValue"));
+      const goldProjectsValue = /** @type {HTMLElement} */ (document.getElementById("goldProjectsValue"));
+      const goldMarginValue = /** @type {HTMLElement} */ (document.getElementById("goldMarginValue"));
+      const goldCatalogLiftValue = /** @type {HTMLElement} */ (document.getElementById("goldCatalogLiftValue"));
+      const platformCostValue = /** @type {HTMLElement} */ (document.getElementById("platformCostValue"));
+      const opsRunValue = /** @type {HTMLElement} */ (document.getElementById("opsRunValue"));
+      const opsDevValue = /** @type {HTMLElement} */ (document.getElementById("opsDevValue"));
+      const absorbedValue = /** @type {HTMLElement} */ (document.getElementById("absorbedValue"));
+      const remainingOpsValue = /** @type {HTMLElement} */ (document.getElementById("remainingOpsValue"));
+
+      const bronzeContribution = /** @type {HTMLElement} */ (document.getElementById("bronzeContribution"));
+      const silverContribution = /** @type {HTMLElement} */ (document.getElementById("silverContribution"));
+      const goldContribution = /** @type {HTMLElement} */ (document.getElementById("goldContribution"));
+
+      const bronzeFormula = /** @type {HTMLElement} */ (document.getElementById("bronzeFormula"));
+      const silverFormula = /** @type {HTMLElement} */ (document.getElementById("silverFormula"));
+      const goldFormula = /** @type {HTMLElement} */ (document.getElementById("goldFormula"));
+      const opsFormula = /** @type {HTMLElement} */ (document.getElementById("opsFormula"));
+      const overallFormula = /** @type {HTMLElement} */ (document.getElementById("overallFormula"));
+
+      const ebitValue = /** @type {HTMLElement} */ (document.getElementById("ebitValue"));
+      const statusPill = /** @type {HTMLElement} */ (document.getElementById("statusPill"));
+
+      /** @param {number} v */
+      function fmtM(v) {
+        return `${v >= 0 ? "+" : ""}€${v.toFixed(2)}M`;
+      }
+
+      /** @param {number} v */
+      function fmtEuroM(v) {
+        return `€${v.toFixed(2)}M`;
+      }
+
+      /** @param {number} v */
+      function clamp01(v) {
+        return Math.max(0, Math.min(1, v));
+      }
+
+      /**
+       * @param {{
+       *  bronzeRetainerM: number,
+       *  bronzeGovPct: number,
+       *  bronzeTokenPct: number,
+       *  silverPricingM: number,
+       *  silverOffshorePct: number,
+       *  silverReusePct: number,
+       *  goldProjects: number,
+       *  goldMarginM: number,
+       *  goldCatalogLiftPct: number,
+       *  opsRunM: number,
+       *  opsDevM: number,
+       *  baselineAbsorbPct: number
+       * }} p
+       */
+      function computeBridge(p) {
+        // Visual-only model (M€). Tuned to show the "lever logic", not to be financially precise.
+        const bronzeVariableMax = 0.35;
+        const silverOffshoreMax = 1.2;
+        const silverReuseMax = 0.6;
+        const goldCatalogLiftMax = 0.6;
+        const divisions = 4;
+
+        const totalPlatform = Math.max(0, p.opsRunM) + Math.max(0, p.opsDevM);
+        const absorb = totalPlatform * clamp01(p.baselineAbsorbPct / 100);
+        const remainingOps = totalPlatform - absorb;
+
+        const baselineAdj = baseline - absorb;
+
+        const bronzeVariable =
+          bronzeVariableMax *
+          (0.6 * clamp01(p.bronzeGovPct / 100) + 0.4 * clamp01(p.bronzeTokenPct / 100));
+        const bronze = divisions * Math.max(0, p.bronzeRetainerM) + bronzeVariable;
+
+        const silverVariable =
+          silverOffshoreMax * clamp01(p.silverOffshorePct / 100) +
+          silverReuseMax * clamp01(p.silverReusePct / 100);
+        const silver = Math.max(0, p.silverPricingM) + silverVariable;
+
+        const gold =
+          Math.max(0, Math.min(3, Math.round(p.goldProjects))) * p.goldMarginM +
+          goldCatalogLiftMax * clamp01(p.goldCatalogLiftPct / 100);
+
+        const result = baselineAdj + bronze + silver + gold - remainingOps;
+
+        return { baselineAdj, bronze, silver, gold, totalPlatform, absorb, remainingOps, result };
+      }
+
+      const chartCtx = /** @type {HTMLCanvasElement} */ (document.getElementById("multiLeverChart")).getContext("2d");
+
+      const baseLabels = ["Baseline", "Platform cost (net)", "Bronze", "Silver", "Gold", "Result"];
+      const deltaColors = ["#64748b", "#ef4444", "#78716c", "#475569", "#b45309", "#10b981"];
+
+      const bridgeChart = new Chart(chartCtx, {
+        type: "bar",
+        data: {
+          labels: baseLabels,
+          datasets: [
+            {
+              label: "Bridge",
+              // Chart.js floating bars: y: [start, end]
+              data: [
+                [0, baseline],
+                [baseline, baseline],
+                [baseline, baseline],
+                [baseline, baseline],
+                [baseline, baseline],
+                [0, baseline]
+              ],
+              backgroundColor: (ctx) => {
+                const idx = ctx.dataIndex ?? 0;
+                return deltaColors[idx] ?? "#64748b";
+              },
+              borderRadius: 0
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => {
+                  const raw = /** @type {[number, number]} */ (ctx.raw);
+                  const start = Number(raw?.[0] ?? 0);
+                  const end = Number(raw?.[1] ?? 0);
+                  const delta = end - start;
+                  return ` Δ ${fmtM(delta)} (to ${fmtM(end)})`;
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              grid: { display: false }
+            },
+            y: {
+              title: { display: true, text: "EBIT bridge (M€)" },
+              suggestedMin: -2.2,
+              suggestedMax: 1.6,
+              grid: { color: "rgba(148, 163, 184, 0.25)" }
+            }
+          }
+        }
+      });
+
+      function renderAll() {
+        const params = {
+          bronzeRetainerM: Number(bronzeRetainer.value),
+          bronzeGovPct: Number(bronzeGov.value),
+          bronzeTokenPct: Number(bronzeToken.value),
+          silverPricingM: Number(silverPricing.value),
+          silverOffshorePct: Number(silverOffshore.value),
+          silverReusePct: Number(silverReuse.value),
+          goldProjects: Number(goldProjects.value),
+          goldMarginM: Number(goldMargin.value),
+          goldCatalogLiftPct: Number(goldCatalogLift.value),
+          opsRunM: Number(opsRun.value),
+          opsDevM: Number(opsDev.value),
+          baselineAbsorbPct: Number(baselineAbsorb.value)
+        };
+
+        const r = computeBridge(params);
+
+        bronzeRetainerValue.textContent = fmtEuroM(params.bronzeRetainerM);
+        bronzeRetainerTotalValue.textContent = fmtEuroM(4 * params.bronzeRetainerM);
+        bronzeGovValue.textContent = `${params.bronzeGovPct}%`;
+        bronzeTokenValue.textContent = `${params.bronzeTokenPct}%`;
+        silverPricingValue.textContent = fmtEuroM(params.silverPricingM);
+        silverOffshoreValue.textContent = `${params.silverOffshorePct}%`;
+        silverReuseValue.textContent = `${params.silverReusePct}%`;
+        goldProjectsValue.textContent = `${Math.round(params.goldProjects)}`;
+        goldMarginValue.textContent = params.goldMarginM.toFixed(2);
+        goldCatalogLiftValue.textContent = `${params.goldCatalogLiftPct}%`;
+        platformCostValue.textContent = fmtEuroM(r.totalPlatform);
+        opsRunValue.textContent = fmtEuroM(params.opsRunM);
+        opsDevValue.textContent = fmtEuroM(params.opsDevM);
+        absorbedValue.textContent = fmtEuroM(r.absorb);
+        remainingOpsValue.textContent = fmtEuroM(r.remainingOps);
+
+        bronzeContribution.textContent = fmtM(r.bronze);
+        silverContribution.textContent = fmtM(r.silver);
+        goldContribution.textContent = fmtM(r.gold);
+
+        ebitValue.textContent = fmtM(r.result);
+
+        const positive = r.result > 0;
+        const target = r.result >= 1.0;
+
+        if (target) {
+          statusPill.textContent = "TARGET";
+          statusPill.className =
+            "inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-100 text-emerald-800";
+        } else if (positive) {
+          statusPill.textContent = "PROFITABLE";
+          statusPill.className =
+            "inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-amber-100 text-amber-800";
+        } else {
+          statusPill.textContent = "CRITICAL";
+          statusPill.className =
+            "inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-red-100 text-red-800";
+        }
+
+        // Formula readouts (viewer-friendly)
+        bronzeFormula.textContent =
+          `Bronze = 4*Retainer(${params.bronzeRetainerM.toFixed(2)}) + 0.35*(0.6*Gov(${params.bronzeGovPct}%) + 0.4*Token(${params.bronzeTokenPct}%)) = ${r.bronze.toFixed(2)} M€`;
+        silverFormula.textContent =
+          `Silver = Pricing(${params.silverPricingM.toFixed(2)}) + Offshore(1.20*${(params.silverOffshorePct / 100).toFixed(2)}) + Reuse(0.60*${(params.silverReusePct / 100).toFixed(2)}) = ${r.silver.toFixed(2)} M€`;
+        goldFormula.textContent =
+          `Gold = Projects(${Math.round(params.goldProjects)}*${params.goldMarginM.toFixed(2)}) + CatalogLift(0.60*${(params.goldCatalogLiftPct / 100).toFixed(2)}) = ${r.gold.toFixed(2)} M€`;
+        opsFormula.textContent =
+          `Platform = Run(${params.opsRunM.toFixed(2)}) + Dev(${params.opsDevM.toFixed(2)}) = ${r.totalPlatform.toFixed(2)} M€\nAbsorbed into baseline = ${r.absorb.toFixed(2)} M€\nNet (bridge) = ${r.remainingOps.toFixed(2)} M€`;
+
+        // Waterfall math (floating bars)
+        // Story order: Baseline -> Platform cost -> Bronze -> Silver -> Gold -> Result
+        const c0 = r.baselineAdj; // baseline (already includes absorbed portion)
+        const c1 = c0 - r.remainingOps; // apply platform net cost early
+        const c2 = c1 + r.bronze;
+        const c3 = c2 + r.silver;
+        const c4 = c3 + r.gold;
+        const c5 = c4;
+
+        // Indicate positive/negative with arrows on the category labels
+        const deltas = [c0, -r.remainingOps, r.bronze, r.silver, r.gold, c5];
+        bridgeChart.data.labels = baseLabels.map((name, i) => `${name} ${deltas[i] >= 0 ? "↑" : "↓"}`);
+
+        bridgeChart.data.datasets[0].data = [
+          [0, c0], // Baseline
+          [c0, c1], // Platform cost (net)
+          [c1, c2], // Bronze delta
+          [c2, c3], // Silver delta
+          [c3, c4], // Gold delta
+          [0, c5] // Result
+        ];
+        bridgeChart.update();
+
+        overallFormula.textContent =
+          `EBIT = Baseline(${c0.toFixed(2)}) - PlatformNet(${r.remainingOps.toFixed(2)}) + Bronze(${r.bronze.toFixed(2)}) + Silver(${r.silver.toFixed(2)}) + Gold(${r.gold.toFixed(2)}) = ${c5.toFixed(2)} M€`;
+      }
+
+      const inputs = [
+        bronzeRetainer,
+        bronzeGov,
+        bronzeToken,
+        silverPricing,
+        silverOffshore,
+        silverReuse,
+        goldProjects,
+        goldMargin,
+        goldCatalogLift,
+        opsRun,
+        opsDev,
+        baselineAbsorb
+      ];
+      for (const el of inputs) {
+        el.addEventListener("input", renderAll);
+      }
+
+      renderAll();
+
+      // Collapsible controls toggle
+      const controlsToggle = document.getElementById("controlsToggle");
+      const controlsContent = document.getElementById("controlsContent");
+      const controlsChevron = document.getElementById("controlsChevron");
+
+      controlsToggle.addEventListener("click", () => {
+        const isExpanded = controlsToggle.getAttribute("aria-expanded") === "true";
+        controlsToggle.setAttribute("aria-expanded", !isExpanded);
+        controlsContent.classList.toggle("hidden");
+        controlsChevron.classList.toggle("rotate-180");
+      });
+    </script>
+
+    <script>
+      const MODELS = {
+        hub_spoke: {
+          title: "Center of Excellence",
+          desc:
+            "Central CoE defines standards and governance; local teams deliver solutions close to the business.",
+          pros: [
+            "Clear governance and accountability",
+            "Enables local autonomy"
+          ],
+          cons: [
+            "Often becomes a central bottleneck (\"police model\")"
+          ]
+        },
+        vc_franchise: {
+          title: "VC / Franchise (Investor)",
+          desc:
+            "Treat the platform team like an investor or internal vendor: divisions pay for capacity or share efficiency gains.",
+          pros: [
+            "Aligns incentives (cost gated behind value)",
+            "Creates predictable revenue (retainers/capacity blocks)",
+            "Makes consumption visible and controllable (incl. AI spend)"
+          ],
+          cons: [
+            "Framing can feel culturally risky in a conservative org",
+            "If applied universally it can trigger resistance",
+            "Needs simple packaging (avoid “VC” language)"
+          ]
+        },
+        industrial_partner: {
+          title: "Industrialized Partner",
+          desc:
+            "Run delivery like a certified factory: standard components, repeatable pipelines, and hybrid-shore execution with strong quality gates.",
+          pros: [
+            "Matches TÜV DNA: stable, industrial, standardized",
+            "Improves throughput and quality via repeatability",
+            "Enables offshore leverage without sacrificing control"
+          ],
+          cons: [
+            "Requires disciplined service catalogue and ALM",
+            "Needs investment upfront (golden paths, templates, telemetry)",
+            "Must avoid one-size-fits-all; tiering is essential"
+          ]
+        }
+      };
+
+      const modelTitle = document.getElementById("modelTitle");
+      const modelDesc = document.getElementById("modelDesc");
+      const modelPros = document.getElementById("modelPros");
+      const modelCons = document.getElementById("modelCons");
+
+      /** @type {NodeListOf<HTMLButtonElement>} */
+      const modelButtons = document.querySelectorAll("button[data-model]");
+
+      /** @param {keyof typeof MODELS} key */
+      function selectModel(key) {
+        const m = MODELS[key];
+        modelTitle.textContent = m.title;
+        modelDesc.textContent = m.desc;
+
+        modelPros.innerHTML = "";
+        for (const p of m.pros) {
+          const li = document.createElement("li");
+          li.textContent = p;
+          modelPros.appendChild(li);
+        }
+
+        modelCons.innerHTML = "";
+        for (const c of m.cons) {
+          const li = document.createElement("li");
+          li.textContent = c;
+          modelCons.appendChild(li);
+        }
+
+        for (const b of modelButtons) {
+          b.classList.toggle("active-card", b.getAttribute("data-model") === key);
+        }
+      }
+
+      for (const b of modelButtons) {
+        b.addEventListener("click", () => {
+          const key = /** @type {keyof typeof MODELS} */ (b.getAttribute("data-model"));
+          selectModel(key);
+        });
+      }
+
+      selectModel("hub_spoke");
+    </script>
+  </body>
+</html>
+
+
+

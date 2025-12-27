@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Digital Trust Factory — TÜV SÜD Context</title>
+    <meta name="description" content="Slide 1 equivalent: TÜV SÜD context (Atoms→Bits), organization, constraints, and why BPA matters." />
+    <meta name="color-scheme" content="light" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif; }
+    </style>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/site.js" defer></script>
+  </head>
+  <body class="bg-slate-50 text-slate-800">
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:justify-between md:h-16 md:items-center py-3 md:py-0 gap-2">
+          <div class="flex items-center gap-3">
+            <span class="text-xl font-bold text-blue-600">TÜV SÜD</span>
+            <span class="text-slate-400">|</span>
+            <span class="text-slate-600 font-medium">Digital Trust Factory</span>
+          </div>
+          <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
+            <a data-nav href="index.html" class="text-slate-600 hover:text-blue-600">Summary</a>
+            <a data-nav href="tuv-context.html" class="text-slate-600 hover:text-blue-600">TÜV Context</a>
+            <a data-nav href="strategy.html" class="text-slate-600 hover:text-blue-600">Strategy</a>
+            <a data-nav href="operating-model.html" class="text-slate-600 hover:text-blue-600">Operating Model</a>
+            <a data-nav href="roadmap.html" class="text-slate-600 hover:text-blue-600">Roadmap</a>
+            <a data-nav href="fit.html" class="text-slate-600 hover:text-blue-600">Personal Fit</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 py-10">
+      <header class="bg-gradient-to-r from-blue-700 to-cyan-600 text-white rounded-2xl px-6 py-10 shadow-sm">
+        <h1 class="text-3xl md:text-4xl font-bold">Outside‑in context: TÜV SÜD &amp; T‑Tech</h1>
+        <p class="mt-2 text-white/90 max-w-3xl">
+          What TÜV SÜD is optimizing for (trust + performance), how the matrix shapes execution, and why <strong>Digital Service (T‑Tech)</strong> exists as an internal provider.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <span class="bg-white/20 backdrop-blur px-3 py-1.5 rounded-full border border-white/30 text-sm font-semibold">Digital trust</span>
+          <span class="bg-white/20 backdrop-blur px-3 py-1.5 rounded-full border border-white/30 text-sm font-semibold">Matrix reality</span>
+          <span class="bg-white/20 backdrop-blur px-3 py-1.5 rounded-full border border-white/30 text-sm font-semibold">Internal service model</span>
+          <span class="bg-white/20 backdrop-blur px-3 py-1.5 rounded-full border border-white/30 text-sm font-semibold">EBIT impact</span>
+        </div>
+        <div class="mt-4 text-sm text-white/90">
+          Recommended talk track: <span class="font-semibold">outside‑in credibility → who T‑Tech is → where BPA creates leverage</span>.
+        </div>
+      </header>
+
+      <section class="mt-10 grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+          <div class="text-sm text-slate-500">Scale (outside view)</div>
+          <div class="text-2xl font-bold mt-1">€3.4B</div>
+          <div class="text-sm text-slate-600 mt-1">Revenue (approx.)</div>
+          <div class="text-xs text-slate-500 mt-3">
+            Source:
+            <a
+              class="text-blue-700 hover:underline"
+              href="https://www.tuvsud.com/en-us/press-and-media/2025/may/tuev-sued-achieves-significant-revenue-growth-in-2024"
+              target="_blank"
+              rel="noreferrer"
+            >2024 revenue growth (press)</a>
+          </div>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+          <div class="text-sm text-slate-500">Footprint</div>
+          <div class="text-2xl font-bold mt-1">~30,000</div>
+          <div class="text-sm text-slate-600 mt-1">Employees</div>
+          <div class="text-xs text-slate-500 mt-3">
+            Source:
+            <a
+              class="text-blue-700 hover:underline"
+              href="https://www.tuvsud.com/en-us/press-and-media/2025/may/tuev-sued-achieves-significant-revenue-growth-in-2024"
+              target="_blank"
+              rel="noreferrer"
+            >2024 revenue growth (press)</a>
+          </div>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+          <div class="text-sm text-slate-500">Global reach</div>
+          <div class="text-2xl font-bold mt-1">&gt;1,000</div>
+          <div class="text-sm text-slate-600 mt-1">Locations</div>
+          <div class="text-xs text-slate-500 mt-3">
+            Source:
+            <a
+              class="text-blue-700 hover:underline"
+              href="https://www.tuvsud.com/-/media/regions/ch/pdf-files/is-cpi/2022/tuvsud-corporate-brochure-en.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >Corporate brochure (PDF)</a>
+          </div>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+          <div class="text-sm text-slate-500">Operating reality</div>
+          <div class="text-2xl font-bold mt-1">Matrix</div>
+          <div class="text-sm text-slate-600 mt-1">Divisions × Regions</div>
+        </div>
+      </section>
+
+      <section class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
+          <h2 class="text-xl font-bold">The inflection point (TIC sector)</h2>
+          <p class="text-sm text-slate-600 mt-2">
+            The Testing / Inspection / Certification industry is shifting from on-site expert delivery to <strong>data-driven, remote, and AI-supported assurance</strong>.
+            For TÜV SÜD, that means becoming a <strong>digital trust partner</strong> without weakening the brand’s core promise: auditability and safety.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              class="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-sm font-semibold text-blue-700 hover:bg-slate-50"
+              href="https://www.annualreport.tuvsud.com/2024/assets/pdf/en/TUV_SUD_SR24_Web_EN.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              [1] Sustainability Report 2024
+            </a>
+            <a
+              class="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-sm font-semibold text-blue-700 hover:bg-slate-50"
+              href="https://www.annualreport.tuvsud.com/2023/assets/pdf/en/TUV_SUD_AR23_Management_report_EN.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              [2] Annual Report 2023 (Mgmt report)
+            </a>
+            <a
+              class="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-sm font-semibold text-blue-700 hover:bg-slate-50"
+              href="https://www.tuvsud.com/en-us/press-and-media/2025/may/tuev-sued-achieves-significant-revenue-growth-in-2024"
+              target="_blank"
+              rel="noreferrer"
+            >
+              [3] 2024 revenue growth (press)
+            </a>
+            <a
+              class="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-sm font-semibold text-blue-700 hover:bg-slate-50"
+              href="https://www.tuvsud.com/en-us/e-ssentials-newsletter/automotive-essentials/e-ssentials-01-2024/interview-philippe-coution-why-we-need-ethical-ai"
+              target="_blank"
+              rel="noreferrer"
+            >
+              [4] Ethical AI interview
+            </a>
+            <a
+              class="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-sm font-semibold text-blue-700 hover:bg-slate-50"
+              href="https://www.tuvsud.com/en-gb/events/webinars/upcoming-eu-ai-act-and-iso-iec-ieee-standards-for-ai-and-their-impact-on-the-industry"
+              target="_blank"
+              rel="noreferrer"
+            >
+              [5] EU AI Act webinar
+            </a>
+          </div>
+          <div class="mt-4 bg-white border border-slate-200 rounded-lg p-4 border-l-4 border-blue-600">
+            <div class="text-sm font-semibold text-slate-700">Aspirations (outside-in)</div>
+            <ul class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1">
+              <li>
+                Become a <strong>digital trust partner</strong> by combining assurance heritage with digital delivery (data, remote, AI-enabled services).
+                <sup>
+                  <a class="text-blue-700 hover:underline" href="https://www.annualreport.tuvsud.com/2023/assets/pdf/en/TUV_SUD_AR23_Management_report_EN.pdf" target="_blank" rel="noreferrer">[2]</a>
+                </sup>
+              </li>
+              <li>
+                Prove “trust” in the next wave: <strong>AI quality, ethics, and regulation readiness</strong> as market differentiators.
+                <sup>
+                  <a class="text-blue-700 hover:underline" href="https://www.tuvsud.com/en-us/e-ssentials-newsletter/automotive-essentials/e-ssentials-01-2024/interview-philippe-coution-why-we-need-ethical-ai" target="_blank" rel="noreferrer">[4]</a>
+                  <a class="text-blue-700 hover:underline" href="https://www.tuvsud.com/en-gb/events/webinars/upcoming-eu-ai-act-and-iso-iec-ieee-standards-for-ai-and-their-impact-on-the-industry" target="_blank" rel="noreferrer">[5]</a>
+                </sup>
+              </li>
+              <li>
+                Scale impact while staying credible on <strong>sustainability and compliance expectations</strong>.
+                <sup>
+                  <a class="text-blue-700 hover:underline" href="https://www.annualreport.tuvsud.com/2024/assets/pdf/en/TUV_SUD_SR24_Web_EN.pdf" target="_blank" rel="noreferrer">[1]</a>
+                </sup>
+              </li>
+              <li>
+                Maintain strong performance while evolving the portfolio (growth + modernization narrative).
+                <sup>
+                  <a class="text-blue-700 hover:underline" href="https://www.tuvsud.com/en-us/press-and-media/2025/may/tuev-sued-achieves-significant-revenue-growth-in-2024" target="_blank" rel="noreferrer">[3]</a>
+                </sup>
+              </li>
+            </ul>
+            <p class="text-sm text-slate-700 mt-3">
+              <strong>Implication for BPA:</strong> automation must increase speed and scale <em>by making governance easier</em> (evidence-by-default), not by adding manual gates.
+            </p>
+          </div>
+          <div class="mt-4 bg-slate-50 border border-slate-200 rounded-lg p-4">
+            <div class="text-sm font-semibold text-slate-700">Key tension </div>
+            <ul class="text-sm text-slate-600 mt-2 list-disc list-inside space-y-1">
+              <li><strong>Speed</strong> (market + internal demand) vs <strong>compliance</strong> (audits, security, evidence).</li>
+              <li><strong>Enable makers</strong> vs <strong>avoid chaos</strong> (duplication, shadow IT, uncontrolled AI spend).</li>
+              <li><strong>German quality</strong> vs <strong>global scale</strong> (throughput, blended rate, time zones).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
+          <h2 class="text-xl font-bold">Why T-Tech exists (and why it matters)</h2>
+          <p class="text-sm text-slate-600 mt-2">
+            <strong>TÜV SÜD Digital Service GmbH (“T-Tech”)</strong> is the group’s <strong>internal digital delivery arm</strong>: it provides digital services and software/automation delivery to the operating divisions under a
+            <strong>service-provider model</strong> (with governance, pricing, KPIs, and accountability).
+          </p>
+          <ul class="text-sm text-slate-700 mt-3 list-disc list-inside space-y-1">
+            <li><strong>Mission (practical):</strong> accelerate digitalization while preserving TÜV-grade auditability (security/compliance by design).</li>
+            <li><strong>Operating model:</strong> a separate GmbH delivering to internal customers; must show value, manage demand, and make delivery repeatable (factory economics).</li>
+            <li><strong>Success definition:</strong> measurable business value (ROI/efficiency) + sustainable service delivery (pricing/chargeback) + governance that enables speed.</li>
+          </ul>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a
+              class="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-sm font-semibold text-blue-700 hover:bg-slate-50"
+              href="https://jobs.tuvsud.com/job/Business-Process-Automation-Lead-%28wmd%29/1889-en_US/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              BPA Lead job posting (Digital Service GmbH)
+            </a>
+            <a
+              class="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-sm font-semibold text-blue-700 hover:bg-slate-50"
+              href="https://www.northdata.de/T%C3%9CV%20S%C3%9CD%20Digital%20Service%20GmbH,%20M%C3%BCnchen/HRB%20230969"
+              target="_blank"
+              rel="noreferrer"
+            >
+              NorthData (legal entity)
+            </a>
+            <a
+              class="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-sm font-semibold text-blue-700 hover:bg-slate-50"
+              href="https://www.tuvsud.com/en/legal-entities"
+              target="_blank"
+              rel="noreferrer"
+            >
+              TÜV SÜD legal entities
+            </a>
+            <a
+              class="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-sm font-semibold text-blue-700 hover:bg-slate-50"
+              href="https://www.tuvsud.com/en-us/about-us/mission-and-vision"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Mission &amp; vision (group)
+            </a>
+            <a
+              class="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-sm font-semibold text-blue-700 hover:bg-slate-50"
+              href="https://www.tuvsud.com/en-us/resource-centre/stories/megatrend-digital-transformation"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Digital transformation (story)
+            </a>
+            <a
+              class="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+              href="../Inteview%20-%202/Research/Gemini/BPA%20Case%20Study%20Interview%20Preparation.md"
+              target="_blank"
+              rel="noreferrer"
+              title="Local file in this workspace"
+            >
+              Case study prep (internal)
+            </a>
+          </div>
+          <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-3">
+              <div class="font-semibold">Internal customers</div>
+              <div class="text-sm text-slate-600 mt-1">Divisions consume services; chargeback/pricing must work.</div>
+            </div>
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-3">
+              <div class="font-semibold">Factory economics</div>
+              <div class="text-sm text-slate-600 mt-1">Delivery must be industrialized to fix cost base and throughput.</div>
+            </div>
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-3">
+              <div class="font-semibold">Governance as product</div>
+              <div class="text-sm text-slate-600 mt-1">Guardrails + templates that make compliance the “fast path”.</div>
+            </div>
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-3">
+              <div class="font-semibold">Portfolio focus</div>
+              <div class="text-sm text-slate-600 mt-1">Shift attention from long-tail to enterprise value (Gold).</div>
+            </div>
+          </div>
+          <div class="mt-4 bg-white border border-slate-200 rounded-lg p-4 border-l-4 border-blue-600">
+            <div class="text-sm font-semibold text-slate-700">So what does this mean for BPA?</div>
+            <p class="text-sm text-slate-700 mt-2">
+              The BPA function is a <strong>business model + governance</strong> role as much as a technology role: define the automation service catalogue, enforce ALM/security standards, control spend (incl. AI), and
+              demonstrate impact via KPIs/ROI — while keeping delivery fast.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-10">
+        <h2 class="text-2xl font-bold">Explore the divisions (outside-in)</h2>
+        <p class="text-sm text-slate-600 mt-2">
+          Click a division to see (1) the outside-in context and (2) the BPA opportunity focus.
+        </p>
+
+        <div class="mt-4 grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+            <div class="font-semibold text-slate-700">Divisions</div>
+            <div class="mt-3 grid grid-cols-1 gap-2">
+              <button type="button" class="interactive-card text-left border border-slate-200 rounded-lg p-3" data-division="industry_infra">
+                <div class="font-bold">Industry &amp; Infrastructure</div>
+                <div class="text-sm text-slate-600 mt-1">Post-merger harmonization “Gold” territory.</div>
+              </button>
+              <button type="button" class="interactive-card text-left border border-slate-200 rounded-lg p-3" data-division="mobility">
+                <div class="font-bold">Mobility</div>
+                <div class="text-sm text-slate-600 mt-1">TISAX-heavy, security-first automations.</div>
+              </button>
+              <button type="button" class="interactive-card text-left border border-slate-200 rounded-lg p-3" data-division="product_service">
+                <div class="font-bold">Product Service</div>
+                <div class="text-sm text-slate-600 mt-1">High volume → “Silver” factory candidates.</div>
+              </button>
+              <button type="button" class="interactive-card text-left border border-slate-200 rounded-lg p-3" data-division="business_assurance">
+                <div class="font-bold">Business Assurance</div>
+                <div class="text-sm text-slate-600 mt-1">Document-heavy → IDP/AI Builder leverage.</div>
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm lg:col-span-2">
+            <div class="font-semibold text-slate-700">Division view</div>
+            <div class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+                <div class="text-sm text-slate-500">Outside-in context</div>
+                <div id="selectedDivisionTitle" class="text-lg font-bold mt-1">Industry &amp; Infrastructure</div>
+                <div id="selectedDivisionContext" class="text-sm text-slate-700 mt-2"></div>
+                <div id="selectedDivisionLinks" class="mt-3 flex flex-wrap gap-2"></div>
+              </div>
+              <div class="bg-white border border-slate-200 rounded-lg p-4 border-l-4 border-blue-600">
+                <div class="text-sm font-semibold text-slate-700">BPA opportunity focus</div>
+                <div id="selectedDivisionOpportunity" class="text-sm text-slate-700 mt-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="max-w-6xl mx-auto px-4 py-10">
+      <div class="h-px bg-slate-200"></div>
+      <p class="text-sm text-slate-500 mt-4">
+        Next: <a class="text-blue-600 hover:underline" href="strategy.html">Strategy</a> (Slide 2) for the financial bridge and levers.
+      </p>
+    </footer>
+
+    <script>
+      const divisions = {
+        industry_infra: {
+          title: "Industry & Infrastructure",
+          context:
+            "Consolidation/merger dynamics create process duplication, unclear ownership, and fragmented data between formerly separate units (Industry + Real Estate/Infrastructure).",
+          opportunity:
+            "Gold-tier opportunities: post-merger workflow harmonization (inspection scheduling, asset/process reporting), cross-unit intake standardization, and audited integration patterns that reduce cycle time and rework."
+          ,
+          links: [
+            { label: "Press release (consolidation)", href: "https://www.tuvsud.com/en/newsroom/press-releases/2025/july/tuev-sued-to-consolidate-the-services-of-two-divisions" },
+            { label: "Services overview", href: "https://www.tuvsud.com/en-us/services" }
+          ]
+        },
+        mobility: {
+          title: "Mobility",
+          context:
+            "Automotive-facing domain with strong regulatory pressure and high expectations for cybersecurity and controlled data handling.",
+          opportunity:
+            "Security-first automations: TISAX-aligned request intake, evidence trail for approvals, controlled connector patterns, and governance guardrails that allow speed without audit pain."
+          ,
+          links: [
+            { label: "Automotive (Mobility)", href: "https://www.tuvsud.com/en/industries/automotive" },
+            { label: "MOTION initiative", href: "https://www.tuvsud.com/en-us/e-ssentials-newsletter/automotive-essentials/e-ssentials-03-2024/motion-sustainable-mobility" }
+          ]
+        },
+        product_service: {
+          title: "Product Service",
+          context:
+            "High-volume, transactional certification/testing workflows where operational throughput and turnaround time are central KPIs.",
+          opportunity:
+            "Silver-tier factory candidates: standardized request-to-fulfillment workflows, status notifications, sample tracking/hand-offs, and reuse-focused templates to reduce admin latency."
+          ,
+          links: [
+            { label: "Services overview", href: "https://www.tuvsud.com/en-us/services" }
+          ]
+        },
+        business_assurance: {
+          title: "Business Assurance",
+          context:
+            "Document- and schedule-heavy audit/certification processes (management systems, training, cybersecurity assurance).",
+          opportunity:
+            "Automation + IDP: document intake/extraction, audit scheduling support, evidence pack generation, and controlled AI usage (prompt governance + cost gating) in a compliant environment."
+          ,
+          links: [
+            { label: "Business Assurance (overview)", href: "https://www.tuvsud.com/en-us/resource-centre/blogs/business-assurance" }
+          ]
+        }
+      };
+
+      /** @type {keyof typeof divisions} */
+      let selectedDivision = "industry_infra";
+
+      const divisionTitle = document.getElementById("selectedDivisionTitle");
+      const divisionContext = document.getElementById("selectedDivisionContext");
+      const divisionOpportunity = document.getElementById("selectedDivisionOpportunity");
+      const divisionLinks = document.getElementById("selectedDivisionLinks");
+
+      /** @param {keyof typeof divisions} divKey */
+      function renderDivision(divKey) {
+        selectedDivision = divKey;
+        divisionTitle.textContent = divisions[divKey].title;
+        divisionContext.textContent = divisions[divKey].context;
+        divisionOpportunity.textContent = divisions[divKey].opportunity;
+        divisionLinks.innerHTML = "";
+
+        for (const link of divisions[divKey].links) {
+          const a = document.createElement("a");
+          a.className =
+            "inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-blue-700 hover:bg-white/70";
+          a.href = link.href;
+          a.target = "_blank";
+          a.rel = "noreferrer";
+          a.textContent = link.label;
+          divisionLinks.appendChild(a);
+        }
+
+        /** @type {NodeListOf<HTMLButtonElement>} */
+        const buttons = document.querySelectorAll("button[data-division]");
+        for (const b of buttons) {
+          b.classList.toggle("active-card", b.getAttribute("data-division") === divKey);
+        }
+      }
+
+      /** @type {NodeListOf<HTMLButtonElement>} */
+      const divisionButtons = document.querySelectorAll("button[data-division]");
+      for (const b of divisionButtons) {
+        b.addEventListener("click", () => {
+          const key = /** @type {keyof typeof divisions} */ (b.getAttribute("data-division"));
+          renderDivision(key);
+        });
+      }
+
+      // Initial state
+      renderDivision(selectedDivision);
+    </script>
+  </body>
+</html>
+
+
