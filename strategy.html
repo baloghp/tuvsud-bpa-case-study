@@ -44,11 +44,7 @@
         <p class="mt-2 text-white/90 max-w-2xl">
           Tiered service model with three economic levers to fix the P&amp;L.
         </p>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <span class="bg-white/20 backdrop-blur px-3 py-1.5 rounded-full border border-white/30 text-sm font-semibold">Retainer</span>
-          <span class="bg-white/20 backdrop-blur px-3 py-1.5 rounded-full border border-white/30 text-sm font-semibold">Factory</span>
-          <span class="bg-white/20 backdrop-blur px-3 py-1.5 rounded-full border border-white/30 text-sm font-semibold">Gold</span>
-        </div>
+       
       </header>
 
       <section>
@@ -59,14 +55,76 @@
 
         <div class="mt-4 bg-white rounded-xl shadow-sm border border-slate-200 p-5">
 
+          <!-- Top row: Standard models for comparison -->
           <div class="mt-4 grid grid-cols-1 lg:grid-cols-12 gap-4">
-            <!-- 1) Main stage: the synthesized solution -->
-            <div class="lg:col-span-6 bg-gradient-to-br from-blue-50 to-white border border-blue-200 rounded-lg p-5 border-l-4 border-blue-600">
+            <!-- Standard models buttons -->
+            <div class="lg:col-span-6 bg-white border border-slate-200 rounded-lg p-4">
+              <div class="text-sm font-semibold text-slate-700">Standard models (for comparison)</div>
+              <div class="mt-3 grid grid-cols-1 gap-2">
+                <button type="button" class="interactive-card border border-slate-200 bg-white rounded-lg p-4 text-left" data-model="hub_spoke">
+                  <div class="flex items-start justify-between gap-3">
+                    <div>
+                      <div class="font-bold">CoE (Control Tower)</div>
+                      <div class="text-sm text-slate-600 mt-1">Central policing force; review-gate model.</div>
+                    </div>
+                    <span class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-700">Centralized</span>
+                  </div>
+                </button>
+                <button type="button" class="interactive-card border border-slate-200 bg-white rounded-lg p-4 text-left" data-model="vc_franchise">
+                  <div class="flex items-start justify-between gap-3">
+                    <div>
+                      <div class="font-bold">Internal Startup</div>
+                      <div class="text-sm text-slate-600 mt-1">Venture-backed; divisions invest for returns and control.</div>
+                    </div>
+                    <span class="text-xs font-bold px-2 py-1 rounded bg-emerald-100 text-emerald-800">Subscription/Pay Per Use Based </span>
+                  </div>
+                </button>
+                <button type="button" class="interactive-card border border-slate-200 bg-white rounded-lg p-4 text-left" data-model="industrial_partner">
+                  <div class="flex items-start justify-between gap-3">
+                    <div>
+                      <div class="font-bold">Software Factory</div>
+                      <div class="text-sm text-slate-600 mt-1">Template-based development; assembly-line approach.</div>
+                    </div>
+                    <span class="text-xs font-bold px-2 py-1 rounded bg-blue-100 text-blue-800">Templated Delivery</span>
+                  </div>
+                </button>
+                <button type="button" class="interactive-card border border-slate-200 bg-white rounded-lg p-4 text-left" data-model="projectized">
+                  <div class="flex items-start justify-between gap-3">
+                    <div>
+                      <div class="font-bold">Projectized Delivery</div>
+                      <div class="text-sm text-slate-600 mt-1">Everything becomes a project; high overhead per delivery.</div>
+                    </div>
+                    <span class="text-xs font-bold px-2 py-1 rounded bg-purple-100 text-purple-800">Project-Based</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <!-- Selected model details -->
+            <div class="lg:col-span-6 bg-white border border-slate-200 rounded-lg p-4">
+              <div class="text-sm text-slate-500">Selected model details</div>
+              <div id="modelTitle" class="text-lg font-bold mt-1">Center of Excellence (Control Tower)</div>
+              <div id="modelDesc" class="text-sm text-slate-700 mt-2"></div>
+
+              <div class="mt-3">
+                <div class="text-sm font-semibold text-slate-700">Pros</div>
+                <ul id="modelPros" class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1"></ul>
+              </div>
+              <div class="mt-4">
+                <div class="text-sm font-semibold text-slate-700">Cons (TÜV reality)</div>
+                <ul id="modelCons" class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1"></ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom row: Chosen solution -->
+          <div class="mt-6">
+            <div class="bg-gradient-to-br from-blue-50 to-white border border-blue-200 rounded-lg p-5 border-l-4 border-blue-600">
               <div class="text-sm font-semibold text-slate-700">Chosen solution</div>
               <div class="mt-2">
-                <div class="text-xl font-bold">Certified Factory (Tiered Managed Services)</div>
+                <div class="text-xl font-bold">Certified Partner (Tiered Managed Services)</div>
                 <p class="text-sm text-slate-700 mt-2">
-                  Keep the <strong>tiered service layer</strong> (Bronze/Silver/Gold) to scale adoption safely, and apply <strong>different business models</strong> per tier to fix the economics.
+                  Combines <strong>Hub and Spoke operations</strong> with a <strong>tiered service model</strong> (Bronze/Silver/Gold) to scale adoption safely. The Hub provides centralized governance, standards, and platform capabilities, while Spokes deliver solutions close to divisions. We apply <strong>different business models</strong> per tier to fix the economics. See the <a href="operating-model.html" class="text-blue-600 hover:underline font-semibold">Operating Model</a> for detailed Hub and Spoke operations.
                 </p>
                 <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-3">
                   <div class="bg-stone-50 border border-stone-200 rounded-lg p-3">
@@ -79,7 +137,7 @@
                   </div>
                   <div class="bg-amber-50 border border-amber-200 rounded-lg p-3">
                     <div class="font-semibold text-amber-800">Gold</div>
-                    <div class="text-sm text-slate-600 mt-1">SWAT teams for “big fish” projects. Premium governance + margin.</div>
+                    <div class="text-sm text-slate-600 mt-1">SWAT teams for "big fish" projects. Premium governance + margin.</div>
                   </div>
                 </div>
 
@@ -96,56 +154,6 @@
                     See platform product ↓
                   </a>
                 </div>
-              </div>
-            </div>
-
-            <!-- 2) Buttons: standard models -->
-            <div class="lg:col-span-3 bg-white border border-slate-200 rounded-lg p-4">
-              <div class="text-sm font-semibold text-slate-700">Standard models (for comparison)</div>
-              <div class="mt-3 grid grid-cols-1 gap-2">
-                <button type="button" class="interactive-card border border-slate-200 bg-white rounded-lg p-4 text-left" data-model="hub_spoke">
-                  <div class="flex items-start justify-between gap-3">
-                    <div>
-                      <div class="font-bold">CoE </div>
-                      <div class="text-sm text-slate-600 mt-1">CoE (Control Tower) + local delivery.</div>
-                    </div>
-                    <span class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-700">Structure</span>
-                  </div>
-                </button>
-                <button type="button" class="interactive-card border border-slate-200 bg-white rounded-lg p-4 text-left" data-model="vc_franchise">
-                  <div class="flex items-start justify-between gap-3">
-                    <div>
-                      <div class="font-bold">VC / Franchise</div>
-                      <div class="text-sm text-slate-600 mt-1">Value share / retainer economics.</div>
-                    </div>
-                    <span class="text-xs font-bold px-2 py-1 rounded bg-emerald-100 text-emerald-800">Economics</span>
-                  </div>
-                </button>
-                <button type="button" class="interactive-card border border-slate-200 bg-white rounded-lg p-4 text-left" data-model="industrial_partner">
-                  <div class="flex items-start justify-between gap-3">
-                    <div>
-                      <div class="font-bold">Industrialized Partner</div>
-                      <div class="text-sm text-slate-600 mt-1">Factory model + reliability.</div>
-                    </div>
-                    <span class="text-xs font-bold px-2 py-1 rounded bg-blue-100 text-blue-800">Fit</span>
-                  </div>
-                </button>
-              </div>
-            </div>
-
-            <!-- 3) Details: selected standard model -->
-            <div class="lg:col-span-3 bg-white border border-slate-200 rounded-lg p-4">
-              <div class="text-sm text-slate-500">Selected model details</div>
-              <div id="modelTitle" class="text-lg font-bold mt-1">Hub &amp; Spoke (Consultant)</div>
-              <div id="modelDesc" class="text-sm text-slate-700 mt-2"></div>
-
-              <div class="mt-3">
-                <div class="text-sm font-semibold text-slate-700">Pros</div>
-                <ul id="modelPros" class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1"></ul>
-              </div>
-              <div class="mt-4">
-                <div class="text-sm font-semibold text-slate-700">Cons (TÜV reality)</div>
-                <ul id="modelCons" class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1"></ul>
               </div>
             </div>
           </div>
@@ -182,6 +190,65 @@
                 <li><strong>AI drift monitoring:</strong> detect behavior drift and trigger re‑review/re‑certification</li>
                 <li><strong>HOL / HIL / HIC analysis:</strong> define where AI can act vs. where humans must approve/control</li>
               </ul>
+            </div>
+          </div>
+
+          <div class="mt-6 bg-slate-50 border border-slate-200 rounded-lg p-4">
+            <div class="text-sm font-semibold text-slate-700 mb-3">Technical Evidence: Strategy Components → Microsoft Features</div>
+            <div class="overflow-x-auto">
+              <table class="w-full text-sm border-collapse">
+                <thead>
+                  <tr class="bg-white border-b-2 border-slate-300">
+                    <th class="text-left p-2 font-semibold text-slate-700">Your Strategy Component</th>
+                    <th class="text-left p-2 font-semibold text-slate-700">Microsoft Feature (The "Real" Name)</th>
+                    <th class="text-left p-2 font-semibold text-slate-700">Official Reference / Documentation</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200">
+                  <tr class="hover:bg-white/50">
+                    <td class="p-2 font-medium text-slate-800">"Golden Path" / Certified Nodes</td>
+                    <td class="p-2 text-slate-700">Power Platform Catalog</td>
+                    <td class="p-2 text-slate-600 text-xs">
+                      <a href="https://learn.microsoft.com/en-us/power-apps/maker/data-platform/catalog-overview" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline font-semibold">Catalog in Power Platform</a><br/>
+                      <span class="text-slate-500 italic">Allows you to publish approved templates and components (PCFs) that makers can install from a central library.</span>
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-white/50">
+                    <td class="p-2 font-medium text-slate-800">"Quality Gates" / Auto-Review</td>
+                    <td class="p-2 text-slate-700">Pipelines &amp; Solution Checker</td>
+                    <td class="p-2 text-slate-600 text-xs">
+                      <a href="https://learn.microsoft.com/en-us/power-platform/alm/pipelines" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline font-semibold">Pipelines in Power Platform</a><br/>
+                      <span class="text-slate-500 italic">Native in-product CI/CD.</span><br/>
+                      <a href="https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-solution-checker" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline font-semibold">Solution Checker Enforcement</a><br/>
+                      <span class="text-slate-500 italic">Blocks deployment automatically if code violates rules (e.g., hardcoded credentials).</span>
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-white/50">
+                    <td class="p-2 font-medium text-slate-800">"Data Fencing"</td>
+                    <td class="p-2 text-slate-700">DLP Policies</td>
+                    <td class="p-2 text-slate-600 text-xs">
+                      <a href="https://learn.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline font-semibold">Data Loss Prevention Policies</a><br/>
+                      <span class="text-slate-500 italic">Classifies connectors into "Business" (SAP) and "Non-Business" (Twitter) buckets to prevent data leakage.</span>
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-white/50">
+                    <td class="p-2 font-medium text-slate-800">"Airlock" / Sandbox</td>
+                    <td class="p-2 text-slate-700">Environment Routing</td>
+                    <td class="p-2 text-slate-600 text-xs">
+                      <a href="https://learn.microsoft.com/en-us/power-platform/admin/default-environment-routing" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline font-semibold">Default Environment Routing</a><br/>
+                      <span class="text-slate-500 italic">Automatically redirects new makers to their own private Developer Environment, keeping the default environment clean.</span>
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-white/50">
+                    <td class="p-2 font-medium text-slate-800">"Evidence" / Visibility</td>
+                    <td class="p-2 text-slate-700">Managed Environments</td>
+                    <td class="p-2 text-slate-600 text-xs">
+                      <a href="https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-overview" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline font-semibold">Managed Environments Overview</a><br/>
+                      <span class="text-slate-500 italic">Provides "Usage Insights" and "Weekly Digests" to track adoption without manual reporting.</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -222,7 +289,7 @@
               <div class="mt-4 bg-white/70 border border-stone-200 rounded-lg p-3">
                 <div class="text-sm font-semibold text-stone-900">Primary P&amp;L dial</div>
                 <div class="text-sm text-slate-600 mt-1">
-                  <strong>Governance strictness / routing</strong> (what is auto‑approved vs. escalated) + <strong>token budgets</strong>.
+                  <strong>Retainer/subscription amount</strong> (per division) + <strong>governance strictness / routing</strong> (what is auto‑approved vs. escalated) + <strong>token budgets</strong>.
                 </div>
               </div>
             </article>
@@ -266,7 +333,7 @@
               <div class="mt-4 bg-white/70 border border-slate-200 rounded-lg p-3">
                 <div class="text-sm font-semibold text-slate-700">Primary P&amp;L dial</div>
                 <div class="text-sm text-slate-600 mt-1">
-                  <strong>Shore mix</strong> (onshore/offshore ratio) + standardization (reuse rate).
+                  <strong>Project/component pricing</strong> + <strong>Labour Location Arbitrage</strong> (onshore/offshore ratio) + <strong>standardization</strong> (reuse rate).
                 </div>
               </div>
             </article>
@@ -308,7 +375,7 @@
               <div class="mt-4 bg-white/70 border border-amber-200 rounded-lg p-3">
                 <div class="text-sm font-semibold text-amber-900">Primary P&amp;L dial</div>
                 <div class="text-sm text-slate-600 mt-1">
-                  <strong>Project selection &amp; pricing</strong> (margin target) + how much reusable “catalog lift” you harvest per engagement.
+                  <strong>Project volume</strong> (projects/year) + <strong>margin per project</strong> (pricing) + <strong>catalog lift capture</strong> (reusable gains harvested).
                 </div>
               </div>
             </article>
@@ -317,7 +384,7 @@
       </section>
 
       <section>
-        <h2 class="text-2xl font-bold mt-12">Strategic simulator</h2>
+        <h2 class="text-2xl font-bold mt-12">Strategy economics simulator</h2>
         <p class="text-sm text-slate-600 mt-2">
           Interactive model showing how Bronze/Silver/Gold levers plus platform costs combine into Year‑3 EBIT.
         </p>
@@ -381,9 +448,9 @@
               <input id="silverPricing" type="range" min="0.00" max="1.20" step="0.05" value="0.40" class="w-full mt-2" />
               <div class="text-xs text-slate-500 mt-1">Pricing: <span id="silverPricingValue" class="font-semibold text-slate-700">€0.40M</span></div>
 
-              <label for="silverOffshore" class="block text-sm text-slate-600 mt-2">Factory offshore ratio</label>
+              <label for="silverOffshore" class="block text-sm text-slate-600 mt-2">Labour Location Arbitrage</label>
               <input id="silverOffshore" type="range" min="0" max="100" value="80" class="w-full mt-2" />
-              <div class="text-xs text-slate-500 mt-1">Shore mix: <span id="silverOffshoreValue" class="font-semibold text-slate-700">80%</span></div>
+              <div class="text-xs text-slate-500 mt-1">Offshore ratio: <span id="silverOffshoreValue" class="font-semibold text-slate-700">80%</span></div>
 
               <label for="silverReuse" class="block text-sm text-slate-600 mt-3">Reuse rate</label>
               <input id="silverReuse" type="range" min="0" max="100" value="60" class="w-full mt-2" />
@@ -460,7 +527,6 @@
           <div class="mt-4">
             <span id="statusPill" class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-100 text-emerald-800">TARGET</span>
             <p class="text-sm text-slate-500 mt-2">
-              Guardrail: AI is decision-support (HOL/HIL/HIC). Compliance is baked into the catalog, not done by late-stage manual review.
             </p>
           </div>
         </div>
@@ -771,7 +837,7 @@
         bronzeFormula.textContent =
           `Bronze = 4*Retainer(${params.bronzeRetainerM.toFixed(2)}) + 0.35*(0.6*Gov(${params.bronzeGovPct}%) + 0.4*Token(${params.bronzeTokenPct}%)) = ${r.bronze.toFixed(2)} M€`;
         silverFormula.textContent =
-          `Silver = Pricing(${params.silverPricingM.toFixed(2)}) + Offshore(1.20*${(params.silverOffshorePct / 100).toFixed(2)}) + Reuse(0.60*${(params.silverReusePct / 100).toFixed(2)}) = ${r.silver.toFixed(2)} M€`;
+          `Silver = Pricing(${params.silverPricingM.toFixed(2)}) + LocationArb(1.20*${(params.silverOffshorePct / 100).toFixed(2)}) + Reuse(0.60*${(params.silverReusePct / 100).toFixed(2)}) = ${r.silver.toFixed(2)} M€`;
         goldFormula.textContent =
           `Gold = Projects(${Math.round(params.goldProjects)}*${params.goldMarginM.toFixed(2)}) + CatalogLift(0.60*${(params.goldCatalogLiftPct / 100).toFixed(2)}) = ${r.gold.toFixed(2)} M€`;
         opsFormula.textContent =
@@ -840,45 +906,79 @@
     <script>
       const MODELS = {
         hub_spoke: {
-          title: "Center of Excellence",
+          title: "Center of Excellence (Control Tower)",
           desc:
-            "Central CoE defines standards and governance; local teams deliver solutions close to the business.",
+            "Central CoE acts as a control tower that sets standards, reviews all work, and enforces compliance. Local teams deliver solutions but must route everything through the CoE for approval. The CoE functions as a policing force that gates delivery rather than enabling it.",
           pros: [
-            "Clear governance and accountability",
-            "Enables local autonomy"
+            "Clear governance structure with centralized accountability",
+            "Provides consistent standards across divisions",
+            "Centralized expertise can maintain quality standards",
+            "Visible compliance oversight for audit requirements"
           ],
           cons: [
-            "Often becomes a central bottleneck (\"police model\")"
+            "Becomes a reactive bottleneck: CoE reviews become the critical path, slowing delivery",
+            "Police model creates adversarial relationship: business sees CoE as blockers, not enablers",
+            "Doesn't scale: as adoption grows, review queue lengthens, creating frustration",
+            "High overhead: CoE team grows to handle review volume, but doesn't add delivery capacity",
+            "For BPA: Power Platform adoption will explode; a review-gate model will collapse under volume",
+            "Divisions work around CoE: shadow IT increases when legitimate path is too slow"
           ]
         },
         vc_franchise: {
-          title: "VC / Franchise (Investor)",
+          title: "Internal Startup (Venture-Backed)",
           desc:
-            "Treat the platform team like an investor or internal vendor: divisions pay for capacity or share efficiency gains.",
+            "Platform team operates as an internal startup with divisions acting as venture backers. Divisions invest through retainers and capacity blocks, expecting returns and control over priorities. Like VCs funding a startup, divisions want board seats and influence over roadmap, leading to governance conflicts and political battles.",
           pros: [
-            "Aligns incentives (cost gated behind value)",
-            "Creates predictable revenue (retainers/capacity blocks)",
-            "Makes consumption visible and controllable (incl. AI spend)"
+            "Aligns incentives: divisions invest when they see value, creating market-driven demand",
+            "Creates predictable funding through retainers and capacity blocks from venture backers",
+            "Makes consumption visible: AI token spend and premium connectors become transparent to investors",
+            "Self-regulating: high consumption triggers investor conversations, naturally controlling sprawl"
           ],
           cons: [
-            "Framing can feel culturally risky in a conservative org",
-            "If applied universally it can trigger resistance",
-            "Needs simple packaging (avoid “VC” language)"
+            "Governance chaos: venture backers (divisions) want board-level control over priorities, creating messy governance and political battles",
+            "Investor fragmentation: each funding division becomes a primary investor/stakeholder, leading to division-specific priorities",
+            "Politics take over: resource allocation becomes political as divisions compete for startup attention",
+            "Complex investor relations: showing value to 4 different division investors is exponentially harder than one central budget",
+            "Priority conflicts: competing investor priorities from multiple divisions create conflicts over startup capacity and roadmap",
+            "Loss of strategic alignment: startup becomes reactive to investor demands rather than driving strategic initiatives"
           ]
         },
         industrial_partner: {
-          title: "Industrialized Partner",
+          title: "Software Factory (Template-Based Assembly)",
           desc:
-            "Run delivery like a certified factory: standard components, repeatable pipelines, and hybrid-shore execution with strong quality gates.",
+            "Platform team operates as a software factory producing many similar solutions based on standardized templates. Like an assembly line, the factory churns out applications using pre-built templates, but divisions receive solutions built from a limited set that don't accommodate unique needs.",
           pros: [
-            "Matches TÜV DNA: stable, industrial, standardized",
-            "Improves throughput and quality via repeatability",
-            "Enables offshore leverage without sacrificing control"
+            "High throughput: template-based development enables rapid delivery of similar solutions",
+            "Cost efficiency: reusing templates reduces development time and cost per solution",
+            "Consistency: standardized templates ensure uniform quality across solutions",
+            "Scalability: factory model can handle high volume of similar requests efficiently"
           ],
           cons: [
-            "Requires disciplined service catalogue and ALM",
-            "Needs investment upfront (golden paths, templates, telemetry)",
-            "Must avoid one-size-fits-all; tiering is essential"
+            "Lack of long-term flexibility: templates become rigid over time, making it hard to adapt to evolving business needs",
+            "Not aligned to division needs: one-size-fits-all templates don't accommodate unique division requirements",
+            "Causes internal fragmentation: divisions become primary customers, leading to division-specific customizations that fragment the portfolio",
+            "Template lock-in: once built on templates, solutions are difficult to evolve beyond template constraints",
+            "Portfolio sprawl: each division gets \"their\" solution, leading to many similar but slightly different apps",
+            "Division silos: factory serves divisions as customers, reinforcing silos rather than cross-divisional collaboration"
+          ]
+        },
+        projectized: {
+          title: "Projectized Delivery (Everything as a Project)",
+          desc:
+            "Every request from divisions becomes its own project with full project lifecycle overhead. Each delivery is treated as a unique project with project management, governance, and reporting overhead. Divisions get full visibility and control, but at the cost of high overhead per delivery.",
+          pros: [
+            "Clear accountability: each project has defined scope, timeline, and deliverables",
+            "Division control: divisions have full visibility and control over their projects",
+            "Flexibility: each project can be customized to specific division needs",
+            "Transparent costs: project-based pricing provides clear cost attribution per division"
+          ],
+          cons: [
+            "High project overhead: every request requires project initiation, planning, governance, and reporting overhead",
+            "No standardization: each project is unique, preventing reuse and creating portfolio fragmentation",
+            "High cost per delivery: project overhead adds 30-50% to every delivery",
+            "Slow time-to-value: project lifecycle adds weeks/months before delivery starts",
+            "For BPA: Small automation requests become full projects, making simple requests expensive and slow",
+            "Portfolio sprawl: each division gets multiple projects, creating many one-off solutions that don't integrate"
           ]
         }
       };
