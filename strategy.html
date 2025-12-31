@@ -124,19 +124,19 @@
               <div class="mt-2">
                 <div class="text-xl font-bold">Certified Partner (Tiered Managed Services)</div>
                 <p class="text-sm text-slate-700 mt-2">
-                  Combines <strong>Hub and Spoke operations</strong> with a <strong>tiered service model</strong> (Bronze/Silver/Gold) to scale adoption safely. The Hub provides centralized governance, standards, and platform capabilities, while Spokes deliver solutions close to divisions. We apply <strong>different business models</strong> per tier to fix the economics. See the <a href="operating-model.html" class="text-blue-600 hover:underline font-semibold">Operating Model</a> for detailed Hub and Spoke operations.
+                  Combines <strong>Hub and Spoke operations</strong> with a <strong>tiered service model</strong> (Enablement/Factory/Strategic) to scale adoption safely. The Hub provides centralized governance, standards, and platform capabilities, while Spokes deliver solutions close to divisions. We apply <strong>different business models</strong> per tier to fix the economics. See the <a href="operating-model.html" class="text-blue-600 hover:underline font-semibold">Operating Model</a> for detailed Hub and Spoke operations.
                 </p>
                 <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-3">
                   <div class="bg-stone-50 border border-stone-200 rounded-lg p-3">
-                    <div class="font-semibold text-stone-800">Bronze</div>
+                    <div class="font-semibold text-stone-800">Enablement</div>
                     <div class="text-sm text-slate-600 mt-1">Enablement + guardrails (controlled self‑service). </div>
                   </div>
                   <div class="bg-slate-50 border border-slate-200 rounded-lg p-3">
-                    <div class="font-semibold text-slate-800">Silver</div>
+                    <div class="font-semibold text-slate-800">Factory</div>
                     <div class="text-sm text-slate-600 mt-1">Smaller custom components/projects. Client leads; we provide compliant expertise + reusable nodes.</div>
                   </div>
                   <div class="bg-amber-50 border border-amber-200 rounded-lg p-3">
-                    <div class="font-semibold text-amber-800">Gold</div>
+                    <div class="font-semibold text-amber-800">Strategic</div>
                     <div class="text-sm text-slate-600 mt-1">SWAT teams for "big fish" projects. Premium governance + margin.</div>
                   </div>
                 </div>
@@ -262,7 +262,7 @@
           <div class="mt-4 grid grid-cols-1 lg:grid-cols-3 gap-4">
             <article class="bg-stone-50 border border-stone-200 rounded-xl p-5 shadow-sm">
               <div class="flex items-center justify-between gap-3">
-                <div class="text-lg font-bold text-stone-700">Bronze</div>
+                <div class="text-lg font-bold text-stone-700">Enablement</div>
                 <span class="text-xs font-bold px-2 py-1 rounded bg-stone-100 text-stone-800">Enablement</span>
               </div>
               <p class="text-sm text-slate-600 mt-2">
@@ -296,7 +296,7 @@
 
             <article class="bg-slate-50 border border-slate-200 rounded-xl p-5 shadow-sm">
               <div class="flex items-center justify-between gap-3">
-                <div class="text-lg font-bold text-slate-700">Silver</div>
+                <div class="text-lg font-bold text-slate-700">Factory</div>
                 <span class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-700">Factory</span>
               </div>
               <p class="text-sm text-slate-600 mt-2">
@@ -340,7 +340,7 @@
 
             <article class="bg-amber-50 border border-amber-200 rounded-xl p-5 shadow-sm">
               <div class="flex items-center justify-between gap-3">
-                <div class="text-lg font-bold text-amber-700">Gold</div>
+                <div class="text-lg font-bold text-amber-700">Strategic</div>
                 <span class="text-xs font-bold px-2 py-1 rounded bg-amber-100 text-amber-800">SWAT</span>
               </div>
               <p class="text-sm text-slate-600 mt-2">
@@ -356,7 +356,7 @@
               </div>
 
               <div class="mt-4">
-                <div class="text-sm font-semibold text-slate-700">What makes something “Gold”</div>
+                <div class="text-sm font-semibold text-slate-700">What makes something "Strategic"</div>
                 <ul class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1">
                   <li><strong>High impact:</strong> cross‑divisional or mission‑critical outcomes</li>
                   <li><strong>High compliance:</strong> security sign‑off + audit evidence is non‑negotiable</li>
@@ -386,7 +386,7 @@
       <section>
         <h2 class="text-2xl font-bold mt-12">Strategy economics simulator</h2>
         <p class="text-sm text-slate-600 mt-2">
-          Interactive model showing how Bronze/Silver/Gold levers plus platform costs combine into Year‑3 EBIT.
+          Interactive model showing how Enablement/Factory/Strategic levers plus platform costs combine into Year‑3 EBIT.
         </p>
 
         <!-- Collapsible Controls -->
@@ -411,14 +411,14 @@
           </button>
           <div id="controlsContent" class="px-5 pb-5 hidden">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          <!-- Row 1: Bronze -->
+          <!-- Row 1: Enablement -->
           <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
             <div class="bg-stone-50 border border-stone-200 rounded-lg p-3">
               <div class="flex items-center justify-between">
-                <div class="font-bold text-stone-800">Bronze</div>
+                <div class="font-bold text-stone-800">Enablement</div>
                 <span id="bronzeContribution" class="text-xs font-bold px-2 py-1 rounded bg-stone-100 text-stone-800">+€0.0M</span>
               </div>
-              <label for="bronzeRetainer" class="block text-sm text-slate-600 mt-2">Bronze retainer / subscription (per division, M€)</label>
+              <label for="bronzeRetainer" class="block text-sm text-slate-600 mt-2">Enablement retainer / subscription (per division, M€)</label>
               <input id="bronzeRetainer" type="range" min="0.10" max="0.50" step="0.05" value="0.25" class="w-full mt-2" />
               <div class="text-xs text-slate-500 mt-1">
                 Per division: <span id="bronzeRetainerValue" class="font-semibold text-slate-700">€0.25M</span> ·
@@ -433,15 +433,15 @@
               <input id="bronzeToken" type="range" min="0" max="100" value="70" class="w-full mt-2" />
               <div class="text-xs text-slate-500 mt-1">Budget &amp; gating: <span id="bronzeTokenValue" class="font-semibold text-slate-700">70%</span></div>
 
-              <pre class="mt-3 bg-white/70 border border-stone-200 rounded-md p-2 overflow-auto text-xs"><code id="bronzeFormula">Bronze = ...</code></pre>
+              <pre class="mt-3 bg-white/70 border border-stone-200 rounded-md p-2 overflow-auto text-xs"><code id="bronzeFormula">Enablement = ...</code></pre>
             </div>
           </div>
 
-          <!-- Row 1: Silver -->
+          <!-- Row 1: Factory -->
           <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
             <div class="bg-slate-50 border border-slate-200 rounded-lg p-3">
               <div class="flex items-center justify-between">
-                <div class="font-bold text-slate-800">Silver</div>
+                <div class="font-bold text-slate-800">Factory</div>
                 <span id="silverContribution" class="text-xs font-bold px-2 py-1 rounded bg-slate-100 text-slate-700">+€0.0M</span>
               </div>
               <label for="silverPricing" class="block text-sm text-slate-600 mt-2">Small project / component pricing (M€)</label>
@@ -456,22 +456,22 @@
               <input id="silverReuse" type="range" min="0" max="100" value="60" class="w-full mt-2" />
               <div class="text-xs text-slate-500 mt-1">Catalog reuse: <span id="silverReuseValue" class="font-semibold text-slate-700">60%</span></div>
 
-              <pre class="mt-3 bg-white/70 border border-slate-200 rounded-md p-2 overflow-auto text-xs"><code id="silverFormula">Silver = ...</code></pre>
+              <pre class="mt-3 bg-white/70 border border-slate-200 rounded-md p-2 overflow-auto text-xs"><code id="silverFormula">Factory = ...</code></pre>
             </div>
           </div>
 
-          <!-- Row 2: Gold -->
+          <!-- Row 2: Strategic -->
           <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
             <div class="bg-amber-50 border border-amber-200 rounded-lg p-3">
               <div class="flex items-center justify-between">
-                <div class="font-bold text-amber-800">Gold</div>
+                <div class="font-bold text-amber-800">Strategic</div>
                 <span id="goldContribution" class="text-xs font-bold px-2 py-1 rounded bg-amber-100 text-amber-800">+€0.0M</span>
               </div>
-              <label for="goldProjects" class="block text-sm text-slate-600 mt-2">Gold projects / year</label>
+              <label for="goldProjects" class="block text-sm text-slate-600 mt-2">Strategic projects / year</label>
               <input id="goldProjects" type="range" min="0" max="3" step="1" value="2" class="w-full mt-2" />
               <div class="text-xs text-slate-500 mt-1">Volume: <span id="goldProjectsValue" class="font-semibold text-slate-700">2</span></div>
 
-              <label for="goldMargin" class="block text-sm text-slate-600 mt-3">Margin per Gold project (M€)</label>
+              <label for="goldMargin" class="block text-sm text-slate-600 mt-3">Margin per Strategic project (M€)</label>
               <input id="goldMargin" type="range" min="0.3" max="0.9" step="0.05" value="0.65" class="w-full mt-2" />
               <div class="text-xs text-slate-500 mt-1">Margin: <span id="goldMarginValue" class="font-semibold text-slate-700">0.65</span> M€</div>
 
@@ -479,7 +479,7 @@
               <input id="goldCatalogLift" type="range" min="0" max="100" value="60" class="w-full mt-2" />
               <div class="text-xs text-slate-500 mt-1">Reusable gains harvested: <span id="goldCatalogLiftValue" class="font-semibold text-slate-700">60%</span></div>
 
-              <pre class="mt-3 bg-white/70 border border-amber-200 rounded-md p-2 overflow-auto text-xs"><code id="goldFormula">Gold = ...</code></pre>
+              <pre class="mt-3 bg-white/70 border border-amber-200 rounded-md p-2 overflow-auto text-xs"><code id="goldFormula">Strategic = ...</code></pre>
             </div>
           </div>
 
@@ -572,7 +572,7 @@
             <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
               <div class="text-sm font-semibold text-slate-700">Rule 3 — Migrate</div>
               <p class="text-sm text-slate-600 mt-1">
-                Systematically migrate <strong>"Silver" class</strong> apps that are over‑engineered on OutSystems.
+                Systematically migrate <strong>"Factory" class</strong> apps that are over‑engineered on OutSystems.
               </p>
               <ul class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1">
                 <li>Reduces licensing/maintenance cost</li>
@@ -586,7 +586,7 @@
               <div class="text-sm font-semibold text-slate-700">When to use what</div>
               <ul class="text-sm text-slate-700 mt-2 list-disc list-inside space-y-1">
                 <li><strong>OutSystems:</strong> existing "heavy" apps and complex external-facing portals</li>
-                <li><strong>Power Platform:</strong> default for internal process automation (Bronze/Silver/Gold by risk)</li>
+                <li><strong>Power Platform:</strong> default for internal process automation (Enablement/Factory/Strategic by risk)</li>
               </ul>
             </div>
             <div class="bg-white border border-slate-200 rounded-lg p-4">
@@ -718,7 +718,7 @@
 
       const chartCtx = /** @type {HTMLCanvasElement} */ (document.getElementById("multiLeverChart")).getContext("2d");
 
-      const baseLabels = ["Baseline", "Platform cost (net)", "Bronze", "Silver", "Gold", "Result"];
+      const baseLabels = ["Baseline", "Platform cost (net)", "Enablement", "Factory", "Strategic", "Result"];
       const deltaColors = ["#64748b", "#ef4444", "#78716c", "#475569", "#b45309", "#10b981"];
 
       const bridgeChart = new Chart(chartCtx, {
@@ -835,16 +835,16 @@
 
         // Formula readouts (viewer-friendly)
         bronzeFormula.textContent =
-          `Bronze = 4*Retainer(${params.bronzeRetainerM.toFixed(2)}) + 0.35*(0.6*Gov(${params.bronzeGovPct}%) + 0.4*Token(${params.bronzeTokenPct}%)) = ${r.bronze.toFixed(2)} M€`;
+          `Enablement = 4*Retainer(${params.bronzeRetainerM.toFixed(2)}) + 0.35*(0.6*Gov(${params.bronzeGovPct}%) + 0.4*Token(${params.bronzeTokenPct}%)) = ${r.bronze.toFixed(2)} M€`;
         silverFormula.textContent =
-          `Silver = Pricing(${params.silverPricingM.toFixed(2)}) + LocationArb(1.20*${(params.silverOffshorePct / 100).toFixed(2)}) + Reuse(0.60*${(params.silverReusePct / 100).toFixed(2)}) = ${r.silver.toFixed(2)} M€`;
+          `Factory = Pricing(${params.silverPricingM.toFixed(2)}) + LocationArb(1.20*${(params.silverOffshorePct / 100).toFixed(2)}) + Reuse(0.60*${(params.silverReusePct / 100).toFixed(2)}) = ${r.silver.toFixed(2)} M€`;
         goldFormula.textContent =
-          `Gold = Projects(${Math.round(params.goldProjects)}*${params.goldMarginM.toFixed(2)}) + CatalogLift(0.60*${(params.goldCatalogLiftPct / 100).toFixed(2)}) = ${r.gold.toFixed(2)} M€`;
+          `Strategic = Projects(${Math.round(params.goldProjects)}*${params.goldMarginM.toFixed(2)}) + CatalogLift(0.60*${(params.goldCatalogLiftPct / 100).toFixed(2)}) = ${r.gold.toFixed(2)} M€`;
         opsFormula.textContent =
           `Platform = Run(${params.opsRunM.toFixed(2)}) + Dev(${params.opsDevM.toFixed(2)}) = ${r.totalPlatform.toFixed(2)} M€\nAbsorbed into baseline = ${r.absorb.toFixed(2)} M€\nNet (bridge) = ${r.remainingOps.toFixed(2)} M€`;
 
         // Waterfall math (floating bars)
-        // Story order: Baseline -> Platform cost -> Bronze -> Silver -> Gold -> Result
+        // Story order: Baseline -> Platform cost -> Enablement -> Factory -> Strategic -> Result
         const c0 = r.baselineAdj; // baseline (already includes absorbed portion)
         const c1 = c0 - r.remainingOps; // apply platform net cost early
         const c2 = c1 + r.bronze;
@@ -854,20 +854,21 @@
 
         // Indicate positive/negative with arrows on the category labels
         const deltas = [c0, -r.remainingOps, r.bronze, r.silver, r.gold, c5];
-        bridgeChart.data.labels = baseLabels.map((name, i) => `${name} ${deltas[i] >= 0 ? "↑" : "↓"}`);
+        const labelNames = ["Baseline", "Platform cost (net)", "Enablement", "Factory", "Strategic", "Result"];
+        bridgeChart.data.labels = labelNames.map((name, i) => `${name} ${deltas[i] >= 0 ? "↑" : "↓"}`);
 
         bridgeChart.data.datasets[0].data = [
           [0, c0], // Baseline
           [c0, c1], // Platform cost (net)
-          [c1, c2], // Bronze delta
-          [c2, c3], // Silver delta
-          [c3, c4], // Gold delta
+          [c1, c2], // Enablement delta
+          [c2, c3], // Factory delta
+          [c3, c4], // Strategic delta
           [0, c5] // Result
         ];
         bridgeChart.update();
 
         overallFormula.textContent =
-          `EBIT = Baseline(${c0.toFixed(2)}) - PlatformNet(${r.remainingOps.toFixed(2)}) + Bronze(${r.bronze.toFixed(2)}) + Silver(${r.silver.toFixed(2)}) + Gold(${r.gold.toFixed(2)}) = ${c5.toFixed(2)} M€`;
+          `EBIT = Baseline(${c0.toFixed(2)}) - PlatformNet(${r.remainingOps.toFixed(2)}) + Enablement(${r.bronze.toFixed(2)}) + Factory(${r.silver.toFixed(2)}) + Strategic(${r.gold.toFixed(2)}) = ${c5.toFixed(2)} M€`;
       }
 
       const inputs = [
